@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <%- include('../layout/_head.ejs')%>
+</head>
+
+<body class="body-main">
+    <!-- 메인에만 .body-main -->
+
+    <div id="wrap">
+
+        <%- include('../layout/_header.ejs')%>
+
+        <div id="container-block">
+            <main id="content" role="main">
+
+                <div class="main">
+                    <section class="section-top">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="main-banner">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="item"><a href=""><img src="../assets/images/main-banner-1.png" alt=""></a></div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="item"><a href=""><img src="../assets/images/main-banner-1.png" alt=""></a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="search-area">
+                                        <div class="search">
+                                            <form action="">
+                                                <fieldset>
+                                                    <legend>SEARCH</legend>
+                                                    <div class="input-wrap">
+                                                        <input type="text" class="form-control" placeholder="Search Word">
+                                                        <button type="button" aria-label="SEARCH"><i class="icon-search-white"></i></button>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                            <div class="tags">
+                                                <a href="javascript:;">#Issue Paper</a>
+                                                <a href="javascript:;">#MOU</a>
+                                                <a href="javascript:;">#Abstract</a>
+                                                <a href="javascript:;">#Report</a>
+                                                <a href="javascript:;">#Seminars</a>
+                                            </div>
+                                        </div>
+                                        <p class="greeting">
+                                            GLOBAL GENDER EQUALITY <br>
+                                            RESEARCH INSTITUTE, <br>
+                                            LEADING AN INCLUSIVE SOCIETY
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section-quick">
+                        <div class="container">
+                            <div class="card-wrap row m-b-30">
+                                <div class="col-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="img"><img src="../assets/images/main-img-chart-1.svg" alt=""></div>
+                                            <div class="tit">President’s <br>Office</div>
+                                            <div class="more-view"><a href="#"><span>MORE VIEW</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="img"><img src="../assets/images/main-img-chart-2.svg" alt=""></div>
+                                            <div class="tit">Research <br>Goal</div>
+                                            <div class="more-view"><a href="#"><span>MORE VIEW</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="img"><img src="../assets/images/main-img-chart-3.svg" alt=""></div>
+                                            <div class="tit">Gender Policy <br>in Korea</div>
+                                            <div class="more-view"><a href="#"><span>MORE VIEW</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="column-group">
+                                        <div class="row flex-column">
+                                            <div class="col">
+                                                <div class="card bg-secondary">
+                                                    <div class="card-body">
+                                                        <div class="tit">GSIS</div>
+                                                        <div class="desc">Gender Statistics <br>Information System</div>
+                                                        <div class="more-view"><a href="#"><span>MORE VIEW</span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card bg-secondary">
+                                                    <div class="card-body">
+                                                        <div class="tit">KLOWF</div>
+                                                        <div class="desc">Korean Longitudinal Survey of Women and Familles</div>
+                                                        <div class="more-view"><a href="#"><span>MORE VIEW</span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row row-60 align-items-center">
+                                        <div class="col-12 col-lg-auto">
+                                            <h2 class="tit">NOTICE</h2>
+                                        </div>
+                                        <div class="col-12 col-lg">
+                                            <div class="main-notice">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <% for(var i = 0; i < 3; i++){ %>
+                                                        <div class="swiper-slide">
+                                                            <div class="item">
+                                                                <a href="" class="tit">Statistical Handbook: Women in Korea 2020</a>
+                                                                <span class="date">2021-08-21</span>
+                                                            </div>
+                                                        </div>
+                                                        <% } %>
+                                                    </div>
+                                                    <div class="swiper-button-area">
+                                                        <div class="swiper-button-prev"></div>
+                                                        <div class="swiper-button-next"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section-research">
+                        <div class="container">
+                            <div class="d-flex">
+                                <h2 class="title">Research Projects</h2>
+                                <div class="contents">
+                                    <nav class="tab-custom">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link active" data-toggle="tab" href="#t1-1" role="tab" aria-selected="true">Abstract</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" data-toggle="tab" href="#t1-2" role="tab" aria-selected="false">Report</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="t1-1" role="tabpanel">
+                                            <ul class="text-dot">
+                                                <li>Statistical Handbook: Women in Korea 2019</li>
+                                                <li>Preparing Evaluation Standards for Non-consensual Sexual Acts - Research on Case…</li>
+                                                <li>Measures to Improve Support for Child and Youth Victims of Online Sexual Exploitation</li>
+                                                <li>Legislative Agendas on Women and Families for the 21th National Assembly</li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="t1-2" role="tabpanel">...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section-video">
+                        <div class="container">
+                            <div class="row row-60">
+                                <div class="col-12 col-lg">
+                                    <dl>
+                                        <dt>VISION</dt>
+                                        <dd>Global gender equality research institute, leading an inclusive society.</dd>
+                                        <dt>ESTABLISHING OBJECTIVE</dt>
+                                        <dd>Conduct comprehensive research on women’s issues and contribute to
+                                            women’s social participation, welfare promotion and the development of
+                                            women and nation by advancing women’s policy and fostering women’s
+                                            ability and providing women’s information</dd>
+                                        <dt>MISSION</dt>
+                                        <dd>To contribute to the establishment of national gender equality policies for
+                                            realization of gender-equal society and to the enhancement of citizen
+                                            happiness.</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <div class="video">
+                                        <video width="100%">
+                                            <source src="../assets/images/2021_pr_video.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="video-controller">
+                                            <button type="button" class="btn-play"><span class="sr-only">play</span></button>
+                                            <button type="button" class="btn-pause"><span class="sr-only">pause</span></button>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        /* video control */
+                                        function videoControlPlay(e){
+                                            const video = $(e.currentTarget).closest('.video').find('video');
+                                            video.get(0).play();
+                                            $(e.currentTarget).closest('.video').addClass('playing');
+                                        }
+                                        function videoControlPause(e){
+                                            const video = $(e.currentTarget).closest('.video').find('video');
+                                            video.get(0).pause();
+                                            $(e.currentTarget).closest('.video').removeClass('playing');
+                                        }
+                                        const btnsPlay = document.querySelectorAll('.btn-play');
+                                        const btnsPause = document.querySelectorAll('.btn-pause');
+                                        for (var i = 0 ; i < btnsPlay.length; i++) {
+                                            btnsPlay[i].addEventListener('click',videoControlPlay);
+                                        }
+                                        for (var i = 0 ; i < btnsPlay.length; i++) {
+                                            btnsPause[i].addEventListener('click', videoControlPause);
+                                        }
+
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section-publications">
+                        <div class="container">
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <h2 class="title">Publications</h2>
+                                </div>
+                                <div class="col-auto">
+                                    <nav class="tab-custom">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link active" data-toggle="tab" href="#t2-1" role="tab" aria-selected="true">Annual Report</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" data-toggle="tab" href="#t2-2" role="tab" aria-selected="false">Women in Korea : Gender Statistics</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" data-toggle="tab" href="#t2-3" role="tab" aria-selected="false">Seminar</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="t2-1" role="tabpanel">
+                                    <div class="report-list">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <% for(var i = 0; i < 6; i++){ %>
+                                                <div class="swiper-slide">
+                                                    <a href="#none" class="item">
+                                                        <div class="img">
+                                                            <img src="https://eng.kwdi.re.kr/upload/editor/ECM014/ECM01420210615135313UQGQK.jpg" alt="">
+                                                        </div>
+                                                        <div class="tit">Statistical Handbook: Women in Korea 2020</div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="info">
+                                                                <span>Date</span>
+                                                                <i>2021-04-29</i>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Year</span>
+                                                                <i>2021</i>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <% } %>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="t2-2" role="tabpanel">
+
+                                </div>
+                                <div class="tab-pane fade" id="t2-3" role="tabpanel">
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section-statistics">
+                        <div class="container">
+                            <h2 class="title">Statistics</h2>
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <div class="text">
+                                        <strong>Gender Statistics at a Glance</strong>
+                                        <p>For the realization of a gender-equal society in all the world Facilitate the connection of activists and proceed with the activity.</p>
+                                        <em>Visiting Gender <br>Equality Support Organization</em>
+                                        <a href="" class="btn btn-round btn-outline-primary">VIEW</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-8">
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="section-board">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" data-toggle="tab" href="#t2-1" role="tab" aria-selected="true">News</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" data-toggle="tab" href="#t2-2" role="tab" aria-selected="false">Event</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <% for(var i = 0; i < 6; i++){ %>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="img">
+                                                    <a href="">
+                                                        <img src="https://eng.kwdi.re.kr/upload/ECM032/ECM03220210929111921RLBIV.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="more-view"><a href="#"><span>MORE VIEW</span></a></div>
+                                            </div>
+                                        </div>
+                                        <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+        <%- include('../layout/_footer.ejs')%>
+
+    </div>
+
+
+    <script>
+        var visualSwiper = new Swiper('.main-visual .swiper-container', {
+            loop: true,
+            speed: 900,
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            on: {
+                slideChangeTransitionEnd: function () {
+                    $('.main-visual .swiper-slide').removeClass('active');
+                    $('.main-visual .swiper-slide-active').addClass('active');
+                }
+            }
+        });
+
+        var noticeSwiper = new Swiper('.main-notice .swiper-container', {
+            direction: 'vertical',
+            loop: true,
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3500,
+            },
+        });
+
+        var publicationsSwiper = new Swiper('.section-publications .swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 60,
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            navigation: {
+                nextEl: '.swiper-button-next-sites',
+                prevEl: '.swiper-button-prev-sites',
+            },
+        });
+
+        var sitesSwiper = new Swiper('.main-sites .swiper-container', {
+            slidesPerView: 5,
+            spaceBetween: 15,
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            navigation: {
+                nextEl: '.swiper-button-next-sites',
+                prevEl: '.swiper-button-prev-sites',
+            },
+        });
+    </script>
+
+</body>
+
+</html>

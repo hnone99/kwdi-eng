@@ -13,6 +13,10 @@
 .icon-hamburger{background-image: url('../images/icon-hamburger.svg');width: 30px;height: 30px;}
 .icon-search-white{background-image: url('../images/icon-search-white.svg');width: 30px;height: 30px;}
 
+.icon-arrow-left{display: inline-block;width: 12px;height: 12px;border-top: 2px solid #000;border-right: 2px solid #000;transform: rotate(-135deg);border-radius: px;vertical-align: middle;}
+.icon-arrow-right{display: inline-block;width: 12px;height: 12px;border-top: 2px solid #000;border-right: 2px solid #000;transform: rotate(45deg);border-radius: 1px;vertical-align: middle;}
+.icon-arrow-down{display: inline-block;width: 12px;height: 12px;border-top: 2px solid #fff;border-right: 2px solid #fff;transform: rotate(90deg);border-radius: 1px;vertical-align: middle;}
+
 .font-12px{font-size: 12px !important;}
 .font-14px{font-size: 14px !important;}
 .font-16px{font-size: 16px !important;}
@@ -20,6 +24,7 @@
 
 button{border-radius: 0;border: 0;padding: 0;margin: 0;background: transparent;}
 
+.btn-round{border-radius: 50rem;}
 @include media-breakpoint-down(md) {
     .btn-xl{padding-top: .75rem;padding-bottom: .75rem;}
 }
@@ -150,4 +155,8 @@ textarea{
             .btn-pause{display: block;}
         }
     }
+}
+
+@include media-breakpoint-down(md) {
+    .card-body{padding: 1rem;}
 }

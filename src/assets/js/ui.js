@@ -99,7 +99,7 @@ var Header = {
 	init : function(){
 		this.gnb();
 		this.menu();
-		this.search();
+		this.sitemap();
 	},
 	gnb : function(e){
 		$('.gnb .dep1 > li > a').on('mouseenter focus', function(e){
@@ -135,11 +135,20 @@ var Header = {
 			$('html').removeClass('show-menu');
 		});
 	},
-	search: function(e){
-		$('.btn-mobile-search').on('click',function(e){
+	sitemap: function(){
+		$('.btn-hamburger').on('click',function(e){
 			e.preventDefault();
-			$('html').toggleClass('show-mobile-search');
-			$('.search-area .form-control').focus();
+			$('html').addClass('show-sitemap');
+		});
+		$('.sitemap .dep1 > li > a').on('click', function(e){
+			if($('html').hasClass('is-mobile')){
+				e.preventDefault();
+				$(this).parent('li').toggleClass('active');
+			}
+		});
+		$('.btn-sitemap-close').on('click',function(e){
+			e.preventDefault();
+			$('html').removeClass('show-sitemap');
 		});
 	}
 }

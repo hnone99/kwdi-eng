@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
+    <defs>
+        <style>
+            .cls-2{fill:#32ced3}
+        </style>
+    </defs>
+    <g id="img_circle_02" transform="translate(-1154 -3620)">
+        <g id="타원_46" data-name="타원 46" transform="translate(1154 3620)" style="stroke:#fff;stroke-width:55px;opacity:.204;fill:none">
+            <circle cx="110" cy="110" r="110" style="stroke:none"/>
+            <circle cx="110" cy="110" r="82.5" style="fill:none"/>
+        </g>
+        <g id="img_circle_02-2" data-name="img_circle_02" transform="translate(1154 3620.357)">
+            <path id="패스_958" data-name="패스 958" class="cls-2" d="M770.293 164.817A109.8 109.8 0 0 0 877.1 274.563a109.928 109.928 0 0 1-106.807-109.746z" transform="translate(-770.293 -54.997)"/>
+            <path id="패스_960" data-name="패스 960" class="cls-2" d="M930.994 165.511A109.914 109.914 0 0 1 824.3 273.8a109.782 109.782 0 0 0 106.694-108.289z" transform="translate(-711.39 -54.24)"/>
+            <path id="패스_961" data-name="패스 961" class="cls-2" d="M930.99 220.462A109.781 109.781 0 0 0 824.3 112.324a109.914 109.914 0 0 1 106.69 108.138z" transform="translate(-711.39 -112.246)"/>
+            <path id="패스_962" data-name="패스 962" class="cls-2" d="M825.916 112.364c-1.031-.029-2.055-.077-3.092-.077 1.037 0 2.061.048 3.092.077z" transform="translate(-713.003 -112.286)"/>
+            <path id="패스_963" data-name="패스 963" class="cls-2" d="M821.381 217.313c1.006.027 2.005.077 3.017.077 1.037 0 2.061-.05 3.092-.079-1.031.029-2.055.077-3.094.077-1.01 0-2.011-.048-3.015-.075z" transform="translate(-714.577 2.252)"/>
+            <path id="패스_964" data-name="패스 964" class="cls-2" d="M875.339 167.1c.006-.485.036-.964.036-1.451 0-.537-.031-1.068-.04-1.6.008.535.04 1.066.04 1.606 0 .486-.029.964-.036 1.445z" transform="translate(-655.735 -55.834)"/>
+            <path id="패스_965" data-name="패스 965" class="cls-2" d="M989.9 223.557c.006-.485.036-.964.036-1.449 0-.539-.031-1.07-.04-1.606a109.914 109.914 0 0 0-106.69-108.138c-1.031-.029-2.055-.077-3.092-.077v54.456a55.364 55.364 0 1 1-55.365 55.363h-54.456A109.928 109.928 0 0 0 877.1 331.852c1 .027 2.005.075 3.015.075 1.039 0 2.063-.048 3.094-.077A109.914 109.914 0 0 0 989.9 223.557z" transform="translate(-770.293 -112.286)"/>
+            <path id="선_24" data-name="선 24" transform="translate(.424 109.821)" style="fill:#fff" d="M0 0"/>
+            <path id="패스_966" data-name="패스 966" class="cls-2" d="M822.823 112.287" transform="translate(-713.004 -112.287)"/>
+        </g>
+    </g>
+</svg>

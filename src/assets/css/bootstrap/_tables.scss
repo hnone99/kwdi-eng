@@ -7,15 +7,13 @@
   //margin-bottom: $spacer;
   color: $table-color;
   background-color: $table-bg; // Reset for nesting within parents with `background-color`.
-  font-size: 14px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #e6e6e6;
 
   th,
   td {
     padding: $table-cell-padding;
     vertical-align: middle;
     border-bottom: $table-border-width solid $table-border-color;
-    letter-spacing: -.7px; line-height: 1.5;
   }
 
   th{
@@ -25,7 +23,6 @@
   thead th {
     vertical-align: middle;
     background: $table-head-bg;
-    border-bottom: 0;
   }
 
   tbody + tbody {

@@ -19,7 +19,7 @@
                 <div class="row justify-content-between align-items-center">
                     <div class="col-auto">
                         <h1 class="logo">
-                            <a href="">
+                            <a href="../main/main.html">
                                 <strong>KWDI</strong>
                                 <span><i>Korean</i> Women’s Development Institute</span>
                             </a>
@@ -29,16 +29,16 @@
                         <nav class="gnb">
                             <ul class="dep1">
                                 <li>
-                                    <a href=""><span>About KWDI</span></a>
+                                    <a href="../about/message.html" data-dep1="about"><span>About KWDI</span></a>
                                 </li>
                                 <li>
-                                    <a href=""><span>Publications</span></a>
+                                    <a href="../publications/researchAbstract.html" data-dep1="publications"><span>Publications</span></a>
                                 </li>
                                 <li>
-                                    <a href=""><span>ISSUES</span></a>
+                                    <a href="" data-dep1="issues"><span>ISSUES</span></a>
                                 </li>
                                 <li>
-                                    <a href=""><span>News</span></a>
+                                    <a href="" data-dep1="news"><span>News</span></a>
                                 </li>
                             </ul>
                             <!-- <div class="dep2-area">
@@ -95,6 +95,12 @@
                         </nav>
                     </div>
                     <div class="col-auto">
+                        <form action="" class="header-search">
+                            <input type="search" name="q" class="form-control">
+                            <button class="header-search-btn" type="submit" aria-label="SEARCH">
+                                <i class="icon-search"></i>
+                            </button>
+                        </form>
                         <button type="button" class="btn-hamburger" aria-label="MENU">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                                 <defs>
@@ -121,34 +127,34 @@
             <nav class="sitemap">
                 <button type="button" aria-label="close" class="btn-sitemap-close"><i class="icon-x-white"></i></button>
                 <ul class="dep1">
-                    <li class="active">
-                        <a href=""><span>About KWDI</span></a>
+                    <li>
+                        <a href="../about/message.html" data-dep1="about"><span>About KWDI</span></a>
                         <ul class="dep2">
                             <li>
-                                <a href="">President`s Office</a>
+                                <a href="../about/message.html" data-dep2="office">President`s Office</a>
                                 <ul class="dep3">
-                                    <li><a href="">President`s Message</a></li>
+                                    <li><a href="../about/message.html" data-dep3="message">President`s Message</a></li>
                                     <li><a href="">Biography</a></li>
                                     <li><a href="">Previous Presidents</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">History</a></li>
+                            <li><a href="../about/history.html" data-dep2="history">History</a></li>
                             <li><a href="">Vision & Stategy</a></li>
                             <li><a href="">Organization(Profile)</a></li>
                             <li><a href="">Research Goal</a></li>
                             <li><a href="">PR</a></li>
-                            <li><a href="">MOU</a></li>
+                            <li><a href="../about/mou.html" data-dep2="mou">MOU</a></li>
                             <li><a href="">Direction</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href=""><span>Publications</span></a>
+                        <a href="../publications/researchAbstract.html" data-dep1="publications"><span>Publications</span></a>
                         <ul class="dep2">
                             <li>
-                                <a href="">Research Projects</a>
+                                <a href="../publications/researchAbstract.html" data-dep2="research">Research Projects</a>
                                 <ul class="dep3">
-                                    <li><a href="">Abstract</a></li>
-                                    <li><a href="">Report</a></li>
+                                    <li><a href="../publications/researchAbstract.html" data-dep3="abstract">Abstract</a></li>
+                                    <li><a href="../publications/researchReport.html" data-dep3="report">Report</a></li>
                                 </ul>
                             </li>
                             <li><a href="">Annual Report</a></li>
@@ -157,7 +163,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href=""><span>ISSUES</span></a>
+                        <a href="javascript:;"><span>ISSUES</span></a>
                         <ul class="dep2">
                             <li><a href="">Issue Paper</a></li>
                             <li><a href="">KEDI Bridf</a></li>

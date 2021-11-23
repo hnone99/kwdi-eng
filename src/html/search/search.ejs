@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <%- include('../layout/_head.ejs')%>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <%- include('../layout/_header.ejs')%>
+
+        <div id="container-block">
+            <main id="content" role="main" data-dep1="search" data-dep2="" data-dep3="">
+
+                <div class="sub-visual">
+                    <div class="container">
+                        <h2 class="page-title">Search</h2>
+                    </div>
+                </div>
+                <div class="search-page">
+                    <div class="container">
+                        <div class="search">
+                            <form action="">
+                                <fieldset>
+                                    <legend>SEARCH</legend>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto mt-1">
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" id="rdoIf1" name="rdoIf">
+                                                <label class="custom-control-label" for="rdoIf1">OR</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" id="rdoIf2" name="rdoIf" checked>
+                                                <label class="custom-control-label" for="rdoIf2">AND</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-wrap">
+                                                <input type="search" class="form-control" placeholder="Search Word">
+                                                <button type="button" aria-label="SEARCH"><i class="icon-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="form-group">
+                            <label for="">SEARCH TARGET</label>
+                            <div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="chk1" name="category[]" value="All" checked>
+                                    <label class="custom-control-label" for="chk1">All</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="chk2" name="category[]" value="ECM001">
+                                    <label class="custom-control-label" for="chk2">Research Goal</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="chk3" name="category[]" value="ECM002">
+                                    <label class="custom-control-label" for="chk3">MOU</label>
+                                </div>
+                            </div>
+
+                            <!-- <div>
+                                <input type="checkbox" id="chk4" name="category[]" value="ECM011">
+                                <label for="chk4"><span></span>Abstract</label>
+                                <input type="checkbox" id="chk5" name="category[]" value="ECM012">
+                                <label for="chk5"><span></span>Report</label>
+                                <input type="checkbox" id="chk6" name="category[]" value="ECM013">
+                                <label for="chk6"><span></span>Seminars</label>
+                                <input type="checkbox" id="chk7" name="category[]" value="ECM014">
+                                <label for="chk7"><span></span>Annual Report</label>
+                                <input type="checkbox" id="chk8" name="category[]" value="ECM015">
+                                <label for="chk8"><span></span>GSPR</label>
+                                <input type="checkbox" id="chk9" name="category[]" value="ECM016">
+                                <label for="chk9"><span></span>ETC</label>
+                                <input type="checkbox" id="chk10" name="category[]" value="ECM021">
+                                <label for="chk10"><span></span>Easily Seen Gender Statistics</label>
+                                <input type="checkbox" id="chk11" name="category[]" value="ECM022">
+                                <label for="chk11"><span></span>Women in Korea : Gerder Statistics</label>
+                                <input type="checkbox" id="chk12" name="category[]" value="ECM031">
+                                <label for="chk12"><span></span>News</label>
+                                <input type="checkbox" id="chk13" name="category[]" value="ECM032">
+                                <label for="chk13"><span></span>Events</label>
+                            </div> -->
+                        </div>
+                        <div class="row row-10">
+                            <div class="col">
+                                <div class="row row-10">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="lbl1">SEARCH RANGE</label>
+                                            <select name="searchMenu" id="lbl1" class="custom-select custom-select-lg">
+                                                <option value="">All</option>
+                                                <option value="TITLE">Title</option>
+                                                <option value="CONTENT">Content</option>
+                                                <option value="WRITER">Writer</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="dateStart">SEARCH PERIOD</label>
+                                            <input type="text" id="dateFrom" name="sdate" class="form-control form-control-lg form-datepicker" value="1991-02-15">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="dateEnd">&nbsp;</label>
+                                            <input type="text" id="dateTo" name="edate" class="form-control form-control-lg form-datepicker">
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    $('#dateTo').val($.datepicker.formatDate('yy-mm-dd', new Date()));
+                                </script>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-group">
+                                    <label for="">&nbsp;</label>
+                                    <button type="button" id="searchBtn" onclick="goSearch();" class="btn btn-primary btn-lg btn-block">SEARCH</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-list">
+
+                            <div class="category">
+                                <p><a href="/about/goal.do">Research Goal</a> <strong><i>( 28 )</i></strong></p>
+
+                                <a href="javascript:moreView('ECM001');" id="id_moreECM001" class="more"><span class="sr-only">more</span></a>
+
+                                <ul>
+                                    <li>
+                                        <a href="/about/goal.do">
+                                            <span class="tit">Improve the ability implement policies on prevention of violence against women after the Me Too Movement</span>
+                                            <span class="info">Period <em>2021</em></span>
+                                            <span class="info">Date <em>2021-03-01</em></span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+        <%- include('../layout/_footer.ejs')%>
+
+    </div>
+
+
+    <script>
+    </script>
+
+</body>
+
+</html>

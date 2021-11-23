@@ -239,12 +239,12 @@ $line-height-lg:              1.5 !default;
 $line-height-sm:              1.5 !default;
 
 $border-width:                1px !default;
-$border-color:                $gray-100 !default;
+$border-color:                #e6e6e6 !default;
 
-$border-radius:               .25rem !default;
-$border-radius-xl:            .25rem !default;
-$border-radius-lg:            .5rem !default;
-$border-radius-sm:            .25rem !default;
+$border-radius:               0 !default;
+$border-radius-xl:            0 !default;
+$border-radius-lg:            0 !default;
+$border-radius-sm:            0 !default;
 
 $rounded-pill:                50rem !default;
 
@@ -355,7 +355,7 @@ $hr-margin-y:                 $spacer !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:          .75rem !default;
+$table-cell-padding:          1rem !default;
 $table-cell-padding-sm:       .3rem !default;
 
 $table-color:                 $body-color !default;
@@ -368,7 +368,7 @@ $table-active-bg:             $table-hover-bg !default;
 $table-border-width:          $border-width !default;
 $table-border-color:          $border-color !default;
 
-$table-head-bg:               #f7f8f8 !default;
+$table-head-bg:               #fafafa !default;
 $table-head-color:            $gray-700 !default;
 $table-th-font-weight:        null !default;
 
@@ -394,7 +394,7 @@ $table-border-level:          -6 !default;
 $input-btn-padding-y:         .5rem !default;
 $input-btn-padding-x:         .75rem !default;
 $input-btn-font-family:       null !default;
-$input-btn-font-size:         0.9375rem !default;
+$input-btn-font-size:         1rem !default;
 $input-btn-line-height:       1.5 !default;
 
 $input-btn-focus-width:       .2rem !default;
@@ -540,10 +540,10 @@ $input-group-addon-border-color:        $input-border-color !default;
 $custom-forms-transition:               background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
 $custom-control-gutter:                 .5rem !default;
-$custom-control-spacer-x:               1rem !default;
+$custom-control-spacer-x:               1.5rem !default;
 $custom-control-cursor:                 null !default;
 
-$custom-control-indicator-size:         1rem !default;
+$custom-control-indicator-size:         1.25rem !default;
 $custom-control-indicator-bg:           $input-bg !default;
 
 $custom-control-indicator-bg-size:      50% 50% !default;
@@ -808,8 +808,8 @@ $dropdown-header-padding:           $dropdown-padding-y $dropdown-item-padding-x
 
 // Pagination
 
-$pagination-padding-y:              .5rem !default;
-$pagination-padding-x:              .75rem !default;
+$pagination-padding-y:              .75rem !default;
+$pagination-padding-x:              1rem !default;
 $pagination-padding-y-sm:           .25rem !default;
 $pagination-padding-x-sm:           .5rem !default;
 $pagination-padding-y-lg:           .75rem !default;
@@ -851,7 +851,7 @@ $jumbotron-bg:                      $gray-200 !default;
 $card-spacer-y:                     1.875rem !default;
 $card-spacer-x:                     1.875rem !default;
 $card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius-lg !default;
+$card-border-radius:                .5rem !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-bg:                       rgba($black, .03) !default;

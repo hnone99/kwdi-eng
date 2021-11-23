@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <%- include('../layout/_head.ejs')%>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <%- include('../layout/_header.ejs')%>
+
+        <div id="container-block">
+            <main id="content" role="main" data-dep1="publications" data-dep2="research" data-dep3="abstract">
+
+                <div class="sub-visual" data-menu="publications">
+                    <div class="container">
+                        <h2 class="page-title">Abstract</h2>
+                    </div>
+                </div>
+                <%- include('../layout/_location.ejs')%>
+                <div class="container">
+                    <form action="">
+                        <fieldset>
+                            <legend>SEARCH</legend>
+                            <div class="board-search">
+                                <div class="row row-10">
+                                    <div class="col-auto">
+                                        <select name="" id="" class="custom-select custom-select-lg">
+                                            <option value="">ALL</option>
+                                            <option value="">Basic</option>
+                                            <option value="">Occasional</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-auto">
+                                        <select name="" id="" class="custom-select custom-select-lg">
+                                            <option value="">PERIOD</option>
+                                            <option value="">ALL</option>
+                                            <option value="">2020</option>
+                                            <option value="">2019</option>
+                                            <option value="">2018</option>
+                                            <option value="">2017</option>
+                                            <option value="">2016</option>
+                                            <option value="">2015</option>
+                                            <option value="">2014</option>
+                                            <option value="">2013</option>
+                                            <option value="">2012</option>
+                                            <option value="">2011</option>
+                                            <option value="">2010</option>
+                                            <option value="">2009</option>
+                                            <option value="">2008</option>
+                                            <option value="">2007</option>
+                                            <option value="">2006</option>
+                                            <option value="">2005</option>
+                                            <option value="">2004</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control form-control-lg" placeholder="KEYWORDS">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-lg btn-primary">SEARCH</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="count">
+                        <span>Total</span>
+                        <i>8</i>
+                        <span>Page</span>
+                        <i>2</i>
+                    </div>
+                    <table class="table">
+                        <colgroup>
+                            <col style="width: 120px">
+                            <col style="width: 250px">
+                            <col>
+                            <col style="width: 120px">
+                            <col style="width: 150px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="text-center">Type</th>
+                                <th class="text-center">Manager</th>
+                                <th class="text-center">Title</th>
+                                <th class="text-center">Period</th>
+                                <th class="text-center">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for(var i = 0; i < 5; i++){ %>
+                            <tr>
+                                <td data-label="Type" class="text-center">Basic</td>
+                                <td data-label="Manager" class="text-center">Basic</td>
+                                <td data-label="Title" class="text-left"><a href="researchView.do?p=1&amp;idx=102943">2020 KWDI Abstract Collection</a></td>
+                                <td data-label="Period" class="text-center">2020</td>
+                                <td data-label="Date" class="text-center">2021-05-04</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Type" class="text-center">Occasional</td>
+                                <td data-label="Manager" class="text-center">Deuk-kyoung Yoon</td>
+                                <td data-label="Title" class="text-left"><a href="researchAbstractDetail.html">Preparing Evaluation Standards for Non-consensual Sexual Acts - Research on Case Studies from Korea and Other Countries</a></td>
+                                <td data-label="Period" class="text-center">2020</td>
+                                <td data-label="Date" class="text-center">2021-04-28</td>
+                            </tr>
+                            <% } %>
+                        </tbody>
+                    </table>
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="First">
+                                    <i class="fas fa-angle-double-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <i class="fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Last">
+                                    <i class="fas fa-angle-double-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </main>
+        </div>
+
+        <%- include('../layout/_footer.ejs')%>
+
+    </div>
+
+
+    <script>
+    </script>
+
+</body>
+
+</html>

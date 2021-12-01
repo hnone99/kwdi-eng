@@ -12,7 +12,7 @@
         <%- include('../layout/_header.ejs')%>
 
         <div id="container-block">
-            <main id="content" role="main" data-dep1="publications" data-dep2="research" data-dep3="abstract">
+            <main id="content" role="main" data-dep1="publications" data-dep2="seminars" data-dep3="">
 
                 <div class="sub-visual">
                     <div class="container">
@@ -28,32 +28,11 @@
                                 <div class="row row-10">
                                     <div class="col-auto">
                                         <select name="" id="" class="custom-select custom-select-lg">
-                                            <option value="">ALL</option>
-                                            <option value="">Basic</option>
-                                            <option value="">Occasional</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-auto">
-                                        <select name="" id="" class="custom-select custom-select-lg">
                                             <option value="">PERIOD</option>
                                             <option value="">ALL</option>
+                                            <option value="">2021</option>
                                             <option value="">2020</option>
-                                            <option value="">2019</option>
-                                            <option value="">2018</option>
                                             <option value="">2017</option>
-                                            <option value="">2016</option>
-                                            <option value="">2015</option>
-                                            <option value="">2014</option>
-                                            <option value="">2013</option>
-                                            <option value="">2012</option>
-                                            <option value="">2011</option>
-                                            <option value="">2010</option>
-                                            <option value="">2009</option>
-                                            <option value="">2008</option>
-                                            <option value="">2007</option>
-                                            <option value="">2006</option>
-                                            <option value="">2005</option>
-                                            <option value="">2004</option>
                                         </select>
                                     </div>
                                     <div class="col">
@@ -74,16 +53,12 @@
                     </div>
                     <table class="table">
                         <colgroup>
-                            <col style="width: 120px">
-                            <col style="width: 250px">
                             <col>
-                            <col style="width: 120px">
                             <col style="width: 150px">
+                            <col style="width: 200px">
                         </colgroup>
                         <thead>
                             <tr>
-                                <th class="text-center">Type</th>
-                                <th class="text-center">Manager</th>
                                 <th class="text-center">Title</th>
                                 <th class="text-center">Period</th>
                                 <th class="text-center">Date</th>
@@ -92,15 +67,11 @@
                         <tbody>
                             <% for(var i = 0; i < 5; i++){ %>
                             <tr>
-                                <td data-label="Type" class="text-center">Basic</td>
-                                <td data-label="Manager" class="text-center">Basic</td>
                                 <td data-label="Title" class="text-left"><a href="researchView.do?p=1&amp;idx=102943">2020 KWDI Abstract Collection</a></td>
                                 <td data-label="Period" class="text-center">2020</td>
                                 <td data-label="Date" class="text-center">2021-05-04</td>
                             </tr>
                             <tr>
-                                <td data-label="Type" class="text-center">Occasional</td>
-                                <td data-label="Manager" class="text-center">Deuk-kyoung Yoon</td>
                                 <td data-label="Title" class="text-left"><a href="researchAbstractDetail.html">Preparing Evaluation Standards for Non-consensual Sexual Acts - Research on Case Studies from Korea and Other Countries</a></td>
                                 <td data-label="Period" class="text-center">2020</td>
                                 <td data-label="Date" class="text-center">2021-04-28</td>

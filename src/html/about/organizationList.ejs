@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <%- include('../layout/_head.ejs')%>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <%- include('../layout/_header.ejs')%>
+
+        <div id="container-block">
+            <main id="content" role="main" data-dep1="about" data-dep2="organization" data-dep3="">
+
+                <div class="sub-visual">
+                    <div class="container">
+                        <h2 class="page-title">Organization</h2>
+                    </div>
+                </div>
+                <%- include('../layout/_location.ejs')%>
+                <div class="container">
+                    <form action="">
+                        <fieldset>
+                            <legend>SEARCH</legend>
+                            <div class="board-search">
+                                <div class="row row-10">
+                                    <div class="col col-lg-auto">
+                                        <select name="cg1" id="id_partCD" class="custom-select custom-select-lg">
+                                            <option value="" selected="">ALL</option>
+
+                                            <option value="KWDI001000">President</option>
+
+                                            <option value="KWDI1500">Vice President</option>
+
+                                            <option value="KWDI002000">Audit Office</option>
+
+                                            <option value="KWDI003000">Division for Planning and Coordination</option>
+
+                                            <option value="KWDI003010">&nbsp;&nbsp;-&nbsp;Center for Research Planning</option>
+
+                                            <option value="KWDI003020">&nbsp;&nbsp;-&nbsp;Center for Research Evaluation</option>
+
+                                            <option value="KWDI003030">&nbsp;&nbsp;-&nbsp;Center for Budget Planning and Management</option>
+
+                                            <option value="KWDI3040">&nbsp;&nbsp;-&nbsp;Center for International Development and Cooperation</option>
+
+                                            <option value="KWDI004000">Division for Women's Visions Research</option>
+
+                                            <option value="KWDI004040">Division for Work and Life Research</option>
+
+                                            <option value="KWDI5000">Division for Gender-based Violence Research</option>
+
+                                            <option value="KWDI6000">Division for Gender Mainstreaming and Knowledge Innovation</option>
+
+                                            <option value="KWDI6010">&nbsp;&nbsp;-&nbsp;Center for Gender Equality Strategy</option>
+
+                                            <option value="KWDI6020">&nbsp;&nbsp;-&nbsp;Center for Gender Impat Assessment</option>
+
+                                            <option value="KWD6030">&nbsp;&nbsp;-&nbsp;Center for Gender Budgeting</option>
+
+                                            <option value="KWDI6040">&nbsp;&nbsp;-&nbsp;Center for Gender-sensitive Data</option>
+
+                                            <option value="KWDI6050">&nbsp;&nbsp;-&nbsp;Center for Information and Knowledge Sharing</option>
+
+                                            <option value="KWDI7000">Division for Administration and Management</option>
+
+                                            <option value="KWDI7010">&nbsp;&nbsp;-&nbsp;Center for Personnel Management</option>
+
+                                            <option value="KWDI7020">&nbsp;&nbsp;-&nbsp;Center for Facility Management and General Affairs</option>
+
+                                            <option value="KWDI7030">&nbsp;&nbsp;-&nbsp;Center for Finance and Accounting</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col col-lg">
+                                        <input type="text" class="form-control form-control-lg" placeholder="NAME">
+                                    </div>
+                                    <div class="col-auto col-lg-auto">
+                                        <button type="submit" class="btn btn-lg btn-primary">SEARCH</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <table class="table">
+                        <colgroup>
+                            <col style="width:240px"><col><col><col><col style="width:200px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Major</th>
+                                <th>Group</th>
+                                <th>Tel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Name"><a href="organizationView.do?actIdx=102234">Seon Ju Cho</a></td>
+                                <td data-label="Position">Director/Senior Research Fellow</td>
+                                <td data-label="Major">Economics</td>
+                                <td data-label="Group"></td>
+                                <td data-label="Tel">82-2-3156-7109</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <%- include('../layout/_pagination.ejs')%>
+                </div>
+
+            </main>
+        </div>
+
+        <%- include('../layout/_footer.ejs')%>
+
+    </div>
+
+
+    <script>
+    </script>
+
+</body>
+
+</html>

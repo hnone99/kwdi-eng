@@ -12,38 +12,61 @@
         <%- include('../layout/_header.ejs')%>
 
         <div id="container-block">
-            <main id="content" role="main" data-dep1="about" data-dep2="mou" data-dep3="">
+            <main id="content" role="main" data-dep1="about" data-dep2="goal" data-dep3="">
 
                 <div class="sub-visual">
                     <div class="container">
-                        <h2 class="page-title">MOU</h2>
+                        <h2 class="page-title">Research Goal</h2>
                     </div>
                 </div>
                 <%- include('../layout/_location.ejs')%>
                 <div class="container">
-                    <form action="">
-                        <fieldset>
-                            <legend>SEARCH</legend>
-                            <div class="board-search">
-                                <div class="row row-10">
-                                    <div class="col">
-                                        <input type="text" class="form-control form-control-lg" placeholder="KEYWORDS">
-                                    </div>
-                                    <div class="col-auto">
-                                        <button type="submit" class="btn btn-lg btn-primary">SEARCH</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </form>
-                    <div class="count">
-                        <span>Total</span>
-                        <i>8</i>
-                        <span>Page</span>
-                        <i>2</i>
+                    <div class="text-right mb-3">
+                        <form id="id_searchForm" name="searchForm" method="GET" action="goal.do">
+                            <label for="id_cg1"><b>Select</b> by Year</label>
+                            <select name="cg1" id="id_cg1" class="custom-select d-lg-inline-block min-width-100px w-auto ml-3" onchange="searchForm.submit();">
+                                <option value="2021">2021</option>
+                                <option value="2020" selected="">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                            </select>
+                        </form>
                     </div>
-                    <div class="mou">
-
+                    <div class="h-text">2021 Research Trend</div>
+                    <div class="goal">
+                        <ul>
+                            <li>
+                                <a href="" role="button" class="tit">Improve systematic plan to revitalize gender equality policies of all ministries and discover policy tasks</a>
+                                <div class="cont">o Establish measures to improve gender mainstreaming system<br>o Expand production of empirical data to promote gender equality policy<br>o Strengthen the effectiveness of the system for promoting gender equality policies</div>
+                            </li>
+                            <li>
+                                <a href="" role="button" class="tit">Develop multi-disciplinary policies to realize inclusive gender equality</a>
+                                <div class="cont">o Repond to "gender conflict" and suggest strategies to spread gender equality awareness<br>o Establish policies to resolve discrimination and secure diversity<br>o Implement global gender equality agenda at home and abroad and strengthen gender mainstreaming in development cooperation</div>
+                            </li>
+                            <li>
+                                <a href="" role="button" class="tit">Discover practical gender equality policies related to aging society, low birthrate and family diversity</a>
+                                <div class="cont">o Prepare gender-related issues and policy measures for responding to aging society<br>o Prepare action plans to promote gender equal low birth rate policy<br>o Develop laws, systems, and policies related to new family forms</div>
+                            </li>
+                            <li>
+                                <a href="" role="button" class="tit">Improve the ability implement policies on prevention of violence against women after the Me Too Movement</a>
+                                <div class="cont">o Lay the foundation for practical implementation of Framework Act on Prevention of Violence against Women<br>o Carry out in-depth analysis of gender violence patterns<br>o Improves system to guarantee women's reproductive and health rights</div>
+                            </li>
+                            <li>
+                                <a href="" role="button" class="tit">Strengthen the execution of gender equal women's labor policy</a>
+                                <div class="cont">o Suggest strategies to strengthen gender-sensitivity in labor policy<br>o Innovate women's job creation<br>o Enhance the possibility of realizing gender equality and work-life balance policy</div>
+                            </li>
+                        </ul>
+                        <script>
+                            $('.goal a').on('click',function(e){
+                                e.preventDefault();
+                                $(this).closest('li').toggleClass('active');
+                            });
+                        </script>
                     </div>
                 </div>
 

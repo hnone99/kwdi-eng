@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <%- include('../layout/_head.ejs')%>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <%- include('../layout/_header.ejs')%>
+
+        <div id="container-block">
+            <main id="content" role="main" data-dep1="about" data-dep2="organization" data-dep3="">
+
+                <div class="sub-visual">
+                    <div class="container">
+                        <h2 class="page-title">Organization</h2>
+                    </div>
+                </div>
+                <%- include('../layout/_location.ejs')%>
+                <div class="container">
+                    <form action="">
+                        <fieldset>
+                            <legend>SEARCH</legend>
+                            <div class="board-search">
+                                <div class="row row-10">
+                                    <div class="col col-lg-auto">
+                                        <select name="cg1" id="id_partCD" class="custom-select custom-select-lg">
+                                            <option value="" selected="">ALL</option>
+
+                                            <option value="KWDI001000">President</option>
+
+                                            <option value="KWDI1500">Vice President</option>
+
+                                            <option value="KWDI002000">Audit Office</option>
+
+                                            <option value="KWDI003000">Division for Planning and Coordination</option>
+
+                                            <option value="KWDI003010">&nbsp;&nbsp;-&nbsp;Center for Research Planning</option>
+
+                                            <option value="KWDI003020">&nbsp;&nbsp;-&nbsp;Center for Research Evaluation</option>
+
+                                            <option value="KWDI003030">&nbsp;&nbsp;-&nbsp;Center for Budget Planning and Management</option>
+
+                                            <option value="KWDI3040">&nbsp;&nbsp;-&nbsp;Center for International Development and Cooperation</option>
+
+                                            <option value="KWDI004000">Division for Women's Visions Research</option>
+
+                                            <option value="KWDI004040">Division for Work and Life Research</option>
+
+                                            <option value="KWDI5000">Division for Gender-based Violence Research</option>
+
+                                            <option value="KWDI6000">Division for Gender Mainstreaming and Knowledge Innovation</option>
+
+                                            <option value="KWDI6010">&nbsp;&nbsp;-&nbsp;Center for Gender Equality Strategy</option>
+
+                                            <option value="KWDI6020">&nbsp;&nbsp;-&nbsp;Center for Gender Impat Assessment</option>
+
+                                            <option value="KWD6030">&nbsp;&nbsp;-&nbsp;Center for Gender Budgeting</option>
+
+                                            <option value="KWDI6040">&nbsp;&nbsp;-&nbsp;Center for Gender-sensitive Data</option>
+
+                                            <option value="KWDI6050">&nbsp;&nbsp;-&nbsp;Center for Information and Knowledge Sharing</option>
+
+                                            <option value="KWDI7000">Division for Administration and Management</option>
+
+                                            <option value="KWDI7010">&nbsp;&nbsp;-&nbsp;Center for Personnel Management</option>
+
+                                            <option value="KWDI7020">&nbsp;&nbsp;-&nbsp;Center for Facility Management and General Affairs</option>
+
+                                            <option value="KWDI7030">&nbsp;&nbsp;-&nbsp;Center for Finance and Accounting</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col col-lg">
+                                        <input type="text" class="form-control form-control-lg" placeholder="NAME">
+                                    </div>
+                                    <div class="col-auto col-lg-auto">
+                                        <button type="submit" class="btn btn-lg btn-primary">SEARCH</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="organization">
+                        <div class="d-none d-lg-block"> <!-- pc -->
+                            <span class="img">
+                                <img src="../assets/images/img-organization.svg" alt="">
+                                <span class="img-map">
+                                    <a href="/about/organizationList.do?cg1=KWDI001000" title="" style="position: absolute; left: 40.86%; top: 19.51%; width: 18.12%; height: 10.27%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI1500" title="" style="position: absolute; left: 40.94%; top: 0%; width: 18.2%; height: 9.96%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI002000" title="" style="position: absolute; left: 71.72%; top: 20.74%;  width: 16.76%;  height: 7.6%; z-index: 2;"></a>
+
+                                    <a href="/about/organizationList.do?cg1=KWDI003000" title="" style="position: absolute; left: 0%; top: 40.55%; width: 15.92%; height: 14.48%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI004000" title="" style="position: absolute; left: 16.76%; top: 40.55%; width: 16.15%; height: 14.68%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI004040" title="" style="position: absolute; left: 33.59%; top: 40.55%; width: 16%; height: 14.48%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI5000" title="" style="position: absolute; left: 50.42%; top: 40.55%; width: 16%; height: 14.48%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI6000" title="" style="position: absolute; left: 67.32%; top: 40.66%; width: 15.85%; height: 14.48%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI7000" title="" style="position: absolute; left: 84.08%; top: 40.55%; width: 16%; height: 14.48%; z-index: 2;"></a>
+
+                                    <a href="/about/organizationList.do?cg1=KWDI003010" title="" style="position: absolute; left: 0.45%; top: 66.74%; width: 30.25%; height: 6.16%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI003020" title="" style="position: absolute; left: 0.61%; top: 73.51%; width: 30.02%; height: 5.54%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI003030" title="" style="position: absolute; left: 0.68%; top: 79.26%; width: 29.87%; height: 6.37%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI3040" title="" style="position: absolute; left: 0.76%; top: 85.83%; width: 29.72%; height: 5.95%; z-index: 2;"></a>
+
+                                    <a href="/about/organizationList.do?cg1=KWDI6010" title="" style="position: absolute; left: 35.78%; top: 67.25%; width: 27.98%; height: 5.54%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI6020" title="" style="position: absolute; left: 35.78%; top: 73.61%; width: 28.13%; height: 5.54%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWD6030" title="" style="position: absolute; left: 35.71%; top: 79.77%; width: 28.13%; height: 5.44%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI6040" title="" style="position: absolute; left: 35.86%; top: 85.93%; width: 27.98%; height: 5.75%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI6050" title="" style="position: absolute; left: 35.86%; top: 92.2%; width: 27.98%; height: 5.95%; z-index: 2;"></a>
+
+                                    <a href="/about/organizationList.do?cg1=KWDI7010" title="" style="position: absolute; left: 69.14%; top: 67.45%; width: 28.43%; height: 5.34%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI7020" title="" style="position: absolute; left: 69.29%; top: 73.61%; width: 28.28%; height: 8.52%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI7030" title="" style="position: absolute; left: 69.29%; top: 82.65%; width: 28.43%; height: 5.54%; z-index: 2;"></a>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="d-lg-none"> <!-- mobile -->
+                            <span class="img">
+                                <img src="../assets/images/img-organization-m.png" alt="">
+                                <span class="img-map">
+                                    <a href="/about/organizationList.do?cg1=KWDI001000" title="" style="position: absolute; left: 34.35%; top: 9.21%; width: 32.9%; height: 3.86%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI1500" title="" style="position: absolute; left: 33.91%; top: 0%; width: 33.48%; height: 3.81%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI002000" title="" style="position: absolute; left: 72.32%; top: 9.65%; width: 27.68%; height: 2.89%; z-index: 2;"></a>
+
+                                    <a href="/about/organizationList.do?cg1=KWDI003000" title="" style="position: absolute; left: 0%; top: 17.08%; width: 100%; height: 4.97%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI004000" title="" style="position: absolute; left: 0%; top: 39.56%; width: 100%; height: 4.63%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI004040" title="" style="position: absolute; left: 0%; top: 44.91%; width: 100%; height: 4.78%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI5000" title="" style="position: absolute; left: 0%; top: 50.27%; width: 100%; height: 4.78%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI6000" title="" style="position: absolute; left: 0%; top: 55.72%; width: 100%; height: 4.87%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI7000" title="" style="position: absolute; left: 0%; top: 82.01%; width: 100%; height: 4.78%; z-index: 2;"></a>
+
+                                    <a href="/about/organizationList.do?cg1=KWDI003010" title="" style="position: absolute; left: 0%; top: 22.48%; width: 100%; height: 4.29%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI003020" title="" style="position: absolute; left: 0%; top: 27.16%; width: 100%; height: 3.91%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI003030" title="" style="position: absolute; left: 0%; top: 31.26%; width: 100%; height: 3.81%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI3040" title="" style="position: absolute; left: 0%; top: 35.31%; width: 100%; height: 3.57%; z-index: 2;"></a>
+
+                                    <a href="/about/organizationList.do?cg1=KWDI6010" title="" style="position: absolute; left: 0%; top: 60.93%; width: 100%; height: 4.25%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI6020" title="" style="position: absolute; left: 0%; top: 65.36%; width: 100%; height: 4.15%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWD6030" title="" style="position: absolute; left: 0%; top: 69.75%; width: 100%; height: 3.71%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI6040" title="" style="position: absolute; left: 0%; top: 73.66%; width: 100%; height: 3.76%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI6050" title="" style="position: absolute; left: 0%; top: 77.52%; width: 100%; height: 4.05%; z-index: 2;"></a>
+
+                                    <a href="/about/organizationList.do?cg1=KWDI7010" title="" style="position: absolute; left: 0%; top: 87.51%; width: 100%; height: 4.1%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI7020" title="" style="position: absolute; left: 0%; top: 91.81%; width: 100%; height: 4%; z-index: 2;"></a>
+                                    <a href="/about/organizationList.do?cg1=KWDI7030" title="" style="position: absolute; left: 0%; top: 96.14%; width: 100%; height: 4%; z-index: 2;"></a>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+        <%- include('../layout/_footer.ejs')%>
+
+    </div>
+
+
+    <script>
+    </script>
+
+</body>
+
+</html>

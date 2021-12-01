@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <%- include('../layout/_head.ejs')%>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <%- include('../layout/_header.ejs')%>
+
+        <div id="container-block">
+            <main id="content" role="main" data-dep1="about" data-dep2="office" data-dep3="presidents">
+
+                <div class="sub-visual">
+                    <div class="container">
+                        <h2 class="page-title">Previous Presidents</h2>
+                    </div>
+                </div>
+                <%- include('../layout/_location.ejs')%>
+                <div class="bg-animation">
+                    <div class="container">
+                        <span class="obj-2" data-0-start="top:60px;" data-0-end="top:-50px;"></span>
+                        <span class="obj-3" data-150-start="left:45%;" data-0-end="left:35%;"></span>
+                    </div>
+                </div>
+                <div class="container">
+                    <strong class="h-text">Previous Presidents</strong>
+                    <ol class="presidents">
+                        <li>
+                            <div class="in">
+                                <em>2010th</em>
+                                <span></span>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="item">
+                                            <div class="img">
+                                                <img src="" alt="">
+                                                <i>16대</i>
+                                            </div>
+                                            <div class="name">문유경 원장</div>
+                                            <div class="info">
+                                                재임기간 <br>2020.05.01 ~ 현재
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in">
+                                <em>2000th</em>
+                                <span></span>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="item">
+                                            <div class="img">
+                                                <img src="" alt="">
+                                                <i>12대</i>
+                                            </div>
+                                            <div class="name">김태현 원장</div>
+                                            <div class="info">
+                                                재임기간 <br>2020.05.01 ~ 현재
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+            </main>
+        </div>
+
+        <%- include('../layout/_footer.ejs')%>
+
+    </div>
+
+
+    <script>
+    </script>
+
+</body>
+
+</html>

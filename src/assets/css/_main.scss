@@ -3,6 +3,7 @@ body.body-main{
     @include media-breakpoint-down(md) {
         background-size: auto 60vh;
     }
+    .header-search{display: none;}
 }
 
 .main{

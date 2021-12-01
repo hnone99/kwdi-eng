@@ -2,11 +2,11 @@
 #skip_navi:focus{top:0; z-index:999}
 
 html,body{height: 100%;}
-body{overflow-x: hidden;width: 100%;padding-top: 130px;}
+body{overflow-x: hidden;width: 100%;padding-top: 129px;}
 @include media-breakpoint-down(md) {
     body{padding-top: 100px;}
 }
-#wrap{min-height: 100%;display: flex;flex-direction: column;overflow-x: hidden;}
+#wrap{min-height: 100%;display: flex;flex-direction: column;overflow: hidden;}
 
 #header-block{
     position: fixed;left: 0;top: 0;z-index: 10;width: 100%;transition: .35s ease-out;
@@ -15,7 +15,7 @@ body{overflow-x: hidden;width: 100%;padding-top: 130px;}
 }
 
 aside{
-    border-bottom: 1px solid rgba(255,255,255,.4);height: 40px;line-height: 1;
+    border-bottom: 1px solid rgba(255,255,255,.4);height: 39px;line-height: 1;
     .social{
         display: flex;
         li{margin-right: 26px;}
@@ -24,6 +24,14 @@ aside{
     .lang{
         a{color: #fff;font-size: 14px;font-weight: 700;vertical-align: top;}
         i{margin-right: 5px;}
+    }
+}
+@include media-breakpoint-down(md) {
+    aside{
+        .social,
+        .lang{
+            a{font-size: 12px;}
+        }
     }
 }
 
@@ -35,12 +43,13 @@ header{transition: .35s ease-out;}
 }
 
 h1.logo{
-    a{color: #fff;text-decoration: none;line-height: 1;vertical-align: top;}
-    strong{font-size: 34px;font-weight: 700;}
+    line-height: 1;vertical-align: top;font-size: 0;
+    a{color: #fff;text-decoration: none;line-height: 1;display: inline-block;vertical-align: top;}
+    strong{font-size: 30px;font-weight: 700;}
     span{font-size: 16px;margin-left: 3px;font-weight: 700;}
     i{color: #3168b9;}
     @include media-breakpoint-down(md) {
-        strong{font-size: 28px;}
+        strong{font-size: 24px;}
         span,
         i{display: none;}
     }
@@ -62,14 +71,14 @@ h1.logo{
             &.active{
                 > a span::before{width: 100%;}
             }
-            & + li{margin-left: 60px;}
+            & + li{margin-left: 56px;}
         }
     }
     .dep2{
         position: absolute;left: 0;top: 90px;
     }
 }
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(xl) {
     .gnb{margin-right: 2rem;}
     .gnb .dep1 > li > a{font-size: 16px;}
     .gnb .dep1 > li + li{margin-left: 30px;}
@@ -80,19 +89,33 @@ h1.logo{
 }
 
 .header-search{
-    position: relative;height: 48px;display: inline-block;vertical-align: middle;margin-right: 30px;margin-left: 30px;line-height: 1;
-    .form-control{background-color: #f4f6f8;border: 0;border-radius: 50rem;width: 0;height: 100%;position: absolute;right: 0;top: 0;padding-right: 0;padding-left: 0;transition: .4s ease;}
+    position: relative;display: inline-block;vertical-align: middle;margin-right: 30px;margin-left: 30px;line-height: 1;
+    .form-control{background-color: #f4f6f8;border: 0;border-radius: 50rem;width: 0;height: 48px;padding-right: 0;padding-left: 0;transition: none;display: none;box-shadow: none;}
     .header-search-btn{position: absolute;right: 15px;top: 50%;transform: translateY(-50%);line-height: 1;
         i{vertical-align: middle;}
     }
     &.active{
-        .form-control{width: 200px;padding-left: .75rem;padding-right: .75rem;}
+        margin-left: 0;
+        .form-control{width: 220px;padding-left: 1rem;padding-right: 3rem;display: block;}
+        .icon-search{width: 24px;height: 24px;}
+    }
+}
+@include media-breakpoint-down(xl) {
+    .header-search{
+        &.active{
+            .form-control{width: 180px;}
+        }
     }
 }
 @include media-breakpoint-down(md) {
     .header-search{
         margin-right: 5px;margin-left: 0;
+        .form-control{height: 36px;}
         .icon-search{width: 24px;height: 24px;}
+        &.active{
+            .form-control{width: 180px;}
+            .icon-search{width: 20px;height: 20px;}
+        }
     }
 }
 
@@ -117,7 +140,7 @@ body:not(.body-main){
 }
 
 html.is-scrolled{
-    header{background: #fff;}
+    .header{background: #fff;}
 }
 
 html.header-fixed{
@@ -125,6 +148,7 @@ html.header-fixed{
         box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
         transform: translateY(-40px);
     }
+    header{background: #fff;}
     h1.logo{
         strong,
         span{color: #000;}

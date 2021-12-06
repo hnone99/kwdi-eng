@@ -18,6 +18,7 @@ var PATH = {
         , SCRIPT: './src/assets/js'
         , LIB: './src/assets/lib'
         , FONTS: './src/assets/fonts'
+        , DOWNLOAD: './src/assets/download'
     }
 },
 // 산출물 경로
@@ -30,6 +31,7 @@ DEST_PATH = {
         , SCRIPT: './dist/assets/js'
         , LIB: './dist/assets/lib'
         , FONTS: './dist/assets/fonts'
+        , DOWNLOAD: './dist/assets/download'
     }
 };
 
@@ -87,6 +89,11 @@ gulp.task( 'library', () => {
 gulp.task( 'fonts', () => {
     return gulp.src( PATH.ASSETS.FONTS + '/**')
         .pipe( gulp.dest( DEST_PATH.ASSETS.FONTS ));
+});
+
+gulp.task( 'download', () => {
+    return gulp.src( PATH.ASSETS.DOWNLOAD + '/**')
+        .pipe( gulp.dest( DEST_PATH.ASSETS.DOWNLOAD ));
 });
 
 gulp.task( 'images', () => {
@@ -152,6 +159,7 @@ var allSeries = gulp.series([
     , 'images'
     , 'library'
     , 'fonts'
+    , 'download'
     , 'nodemon:start'
     , 'browserSync'
     , 'watch'

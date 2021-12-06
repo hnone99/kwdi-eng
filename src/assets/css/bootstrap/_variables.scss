@@ -33,7 +33,7 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #007bff !default;
+$blue:    #0074FF !default;
 $sky:  #1cc0cc !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -41,9 +41,9 @@ $red:     #f83d50 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffa807 !default;
 $green:   #65d37c !default;
-$navy:    #02132c !default;
+$navy:    #2b3641 !default;
 $gray:    #545658 !default;
-$lightgray:    #909295 !default;
+$lightgray:    #a6a6a6 !default;
 
 $colors: () !default;
 $colors: map-merge(
@@ -362,7 +362,7 @@ $table-color:                 $body-color !default;
 $table-bg:                    null !default;
 $table-accent-bg:             rgba($black, .05) !default;
 $table-hover-color:           $table-color !default;
-$table-hover-bg:              rgba($black, .075) !default;
+$table-hover-bg:              rgba($black, .03) !default;
 $table-active-bg:             $table-hover-bg !default;
 
 $table-border-width:          $border-width !default;

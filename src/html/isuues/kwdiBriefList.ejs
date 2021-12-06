@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <%- include('../layout/_head.ejs')%>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <%- include('../layout/_header.ejs')%>
+
+        <div id="container-block">
+            <main id="content" role="main" data-dep1="issues" data-dep2="brief" data-dep3="">
+
+                <div class="sub-visual">
+                    <div class="container">
+                        <h2 class="page-title">Brief</h2>
+                    </div>
+                </div>
+                <%- include('../layout/_location.ejs')%>
+                <div class="container">
+                    <form action="">
+                        <fieldset>
+                            <legend>SEARCH</legend>
+                            <div class="board-search">
+                                <div class="row row-10">
+                                    <div class="col col-lg-auto">
+                                        <select id="id_cg1" name="cg1" class="custom-select custom-select-lg">
+                                            <option value="" selected="">발간호 선택</option>
+
+                                            <option value="제65호">제65호</option>
+
+                                            <option value="제64호">제64호</option>
+
+                                            <option value="제63호">제63호</option>
+
+                                            <option value="제62호">제62호</option>
+
+                                            <option value="제61호">제61호</option>
+
+                                            <option value="제60호">제60호</option>
+
+                                            <option value="제59호">제59호</option>
+
+                                            <option value="제58호">제58호</option>
+
+                                            <option value="제57호">제57호</option>
+
+                                            <option value="제56호">제56호</option>
+
+                                            <option value="제55호">제55호</option>
+
+                                            <option value="제54호">제54호</option>
+
+                                            <option value="제53호">제53호</option>
+
+                                            <option value="제52호">제52호</option>
+
+                                            <option value="제51호">제51호</option>
+
+                                            <option value="제50호">제50호</option>
+
+                                            <option value="제49호">제49호</option>
+
+                                            <option value="제48호">제48호</option>
+
+                                            <option value="제47호">제47호</option>
+
+                                            <option value="제46호">제46호</option>
+
+                                            <option value="제45호">제45호</option>
+
+                                            <option value="제44호">제44호</option>
+
+                                            <option value="제43호">제43호</option>
+
+                                            <option value="제42호">제42호</option>
+
+                                            <option value="제41호">제41호</option>
+
+                                            <option value="제40호">제40호</option>
+
+                                            <option value="제39호">제39호</option>
+
+                                            <option value="제38호">제38호</option>
+
+                                            <option value="제37호">제37호</option>
+
+                                            <option value="제36호">제36호</option>
+
+                                            <option value="제35호">제35호</option>
+
+                                            <option value="제30호">제30호</option>
+
+                                            <option value="제201534호">제201534호</option>
+
+                                            <option value="제201533호">제201533호</option>
+
+                                            <option value="제201532호">제201532호</option>
+
+                                            <option value="제201431호">제201431호</option>
+
+                                            <option value="제201429호">제201429호</option>
+
+                                            <option value="제201428호">제201428호</option>
+
+                                            <option value="제201427호">제201427호</option>
+
+                                            <option value="제201326호">제201326호</option>
+
+                                            <option value="제201325호">제201325호</option>
+
+                                            <option value="제201324호">제201324호</option>
+
+                                            <option value="제201323호">제201323호</option>
+
+                                            <option value="제201222호">제201222호</option>
+
+                                            <option value="제201221호">제201221호</option>
+
+                                            <option value="제201220호">제201220호</option>
+
+                                            <option value="제201219호">제201219호</option>
+
+                                            <option value="제201218호">제201218호</option>
+
+                                            <option value="제201217호">제201217호</option>
+
+                                            <option value="제201116호">제201116호</option>
+
+                                            <option value="제201115호">제201115호</option>
+
+                                            <option value="제201113호">제201113호</option>
+
+                                            <option value="제201112호">제201112호</option>
+
+                                            <option value="제201111호">제201111호</option>
+
+                                            <option value="제201010호">제201010호</option>
+
+                                            <option value="제201009호">제201009호</option>
+
+                                            <option value="제201008호">제201008호</option>
+
+                                            <option value="제201007호">제201007호</option>
+
+                                            <option value="제201006호">제201006호</option>
+
+                                            <option value="제201005호">제201005호</option>
+
+                                            <option value="제200904호">제200904호</option>
+
+                                            <option value="제200903호">제200903호</option>
+
+                                            <option value="제200902호">제200902호</option>
+
+                                            <option value="제200901호">제200901호</option>
+
+                                            <option value="제14호">제14호</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col col-lg-auto">
+                                        <select name="s" id="lbl0" class="custom-select custom-select-lg w-auto">
+                                            <option value="searchAll" selected="">제목+내용</option>
+                                            <option value="searchTitle">제목</option>
+                                            <option value="searchContent">내용</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-100 d-lg-none my-1"></div>
+                                    <div class="col">
+                                        <input type="text" class="form-control form-control-lg" placeholder="KEYWORDS">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-lg btn-gray">SEARCH</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="count">
+                        <span>Total</span>
+                        <i>8</i>
+                        <span>Page</span>
+                        <i>2</i>
+                    </div>
+                    <table class="table table-hover">
+                        <colgroup>
+                            <col width="100">
+                            <col width="130">
+                            <col>
+                            <col width="140">
+                            <col width="120">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="text-center">번호</th>
+                                <th class="text-center">발간호</th>
+                                <th class="text-center">통권제목/제목</th>
+                                <th class="text-center">등록일</th>
+                                <th class="text-center">첨부파일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="번호" class="text-center">65</td>
+                                <td data-label="발간호" class="text-center">제65호</td>
+                                <td data-label="통권제목/제목" class="text-left tit"><small class="text-info">[KWDI   Brief]</small><br><a href="kwdiBriefDetail.html">제조업의 로봇 도입에 따른 여성일자리 변화</a></td>
+                                <td data-label="등록일" class="text-center">2021-09-30</td>
+                                <td data-label="첨부파일" class="text-center"><a href="/inc/download.do?ut=A&amp;upIdx=128710&amp;no=1" aria-label="Download"><i class="icon-download"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="번호" class="text-center">2</td>
+                                <td data-label="발간호" class="text-center">제200901호</td>
+                                <td data-label="통권제목/제목" class="text-left tit"><small class="text-info">[2009년 창간호]</small><br><a href="kwdiBriefDetail.html">2009년 창간호</a></td>
+                                <td data-label="등록일" class="text-center">2010-01-28</td>
+                                <td data-label="첨부파일" class="text-center"><a href="/inc/download.do?ut=A&amp;upIdx=128710&amp;no=1" aria-label="Download"><i class="icon-download"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <%- include('../layout/_pagination.ejs')%>
+                </div>
+
+            </main>
+        </div>
+
+        <%- include('../layout/_footer.ejs')%>
+
+    </div>
+
+
+    <script>
+    </script>
+
+</body>
+
+</html>

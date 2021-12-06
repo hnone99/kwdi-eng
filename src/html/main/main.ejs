@@ -214,28 +214,6 @@
                                             <button type="button" class="btn-pause"><span class="sr-only">pause</span></button>
                                         </div>
                                     </div>
-                                    <script>
-                                        /* video control */
-                                        function videoControlPlay(e){
-                                            const video = $(e.currentTarget).closest('.video').find('video');
-                                            video.get(0).play();
-                                            $(e.currentTarget).closest('.video').addClass('playing');
-                                        }
-                                        function videoControlPause(e){
-                                            const video = $(e.currentTarget).closest('.video').find('video');
-                                            video.get(0).pause();
-                                            $(e.currentTarget).closest('.video').removeClass('playing');
-                                        }
-                                        const btnsPlay = document.querySelectorAll('.btn-play');
-                                        const btnsPause = document.querySelectorAll('.btn-pause');
-                                        for (var i = 0 ; i < btnsPlay.length; i++) {
-                                            btnsPlay[i].addEventListener('click',videoControlPlay);
-                                        }
-                                        for (var i = 0 ; i < btnsPlay.length; i++) {
-                                            btnsPause[i].addEventListener('click', videoControlPause);
-                                        }
-
-                                    </script>
                                 </div>
                             </div>
                         </div>

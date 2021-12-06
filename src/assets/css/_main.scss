@@ -4,6 +4,8 @@ body.body-main{
         background-size: auto 60vh;
     }
     .header-search{display: none;}
+    header{background: transparent;}
+    .gnb .dep2{padding-top: 0;}
 }
 
 .main{
@@ -279,7 +281,7 @@ body.body-main{
             &::after{content: '';display: inline-block;vertical-align: top;width: 100%;height: 2px;background-color: #fff;}
         }
         p{font-size: 18px;}
-        em{font-size: 24px;font-weight: 700;color: #0c3a67;display: block;margin-top: 50px;line-height: 1.3;}
+        em{font-size: 24px;font-weight: 700;color: #0c3a67;display: block;margin-top: 50px;line-height: 1.3;font-style: normal;}
         .btn{min-width: 150px;margin-top: 20px;}
     }
     .donut{

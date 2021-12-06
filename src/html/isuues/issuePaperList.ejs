@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <%- include('../layout/_head.ejs')%>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <%- include('../layout/_header.ejs')%>
+
+        <div id="container-block">
+            <main id="content" role="main" data-dep1="issues" data-dep2="paper" data-dep3="">
+
+                <div class="sub-visual">
+                    <div class="container">
+                        <h2 class="page-title">Issue Paper</h2>
+                    </div>
+                </div>
+                <%- include('../layout/_location.ejs')%>
+                <div class="container">
+                    <form action="">
+                        <fieldset>
+                            <legend>SEARCH</legend>
+                            <div class="board-search">
+                                <div class="row row-10">
+                                    <div class="col-auto">
+                                        <select id="id_cg1" name="cg1" class="custom-select custom-select-lg w-auto">
+                                            <option value="" selected="">연도</option>
+                                            <option value="" selected="">전체</option>
+                                            <option value="2021">2021</option>
+
+                                            <option value="2020">2020</option>
+
+                                            <option value="2019">2019</option>
+
+                                            <option value="2018">2018</option>
+
+                                            <option value="2017">2017</option>
+
+                                            <option value="2016">2016</option>
+
+                                            <option value="2015">2015</option>
+
+                                            <option value="2014">2014</option>
+
+                                            <option value="2013">2013</option>
+
+                                            <option value="2012">2012</option>
+
+                                            <option value="2011-01">2011-01</option>
+
+                                            <option value="2011">2011</option>
+
+                                            <option value="2010-01">2010-01</option>
+
+                                            <option value="2009-01">2009-01</option>
+                                        </select>
+                                    </div>
+                                    <div class="col col-lg-auto">
+                                        <select id="lbl2" name="cg3" size="1" class="custom-select custom-select-lg w-auto">
+                                            <option value="" selected="">연구사업선택</option>
+
+                                            <option value="0030100">전체</option>
+
+                                            <option value="0030101">가족·여성복지</option>
+
+                                            <option value="0030102">가족정책</option>
+
+                                            <option value="0030103">기본연구사업</option>
+
+                                            <option value="0030104">다문화·여성인권안전</option>
+
+                                            <option value="0030105">다문화정책</option>
+
+                                            <option value="0030106">성인지정책</option>
+
+                                            <option value="0030107">수시연구사업</option>
+
+                                            <option value="0030108">여성복지/아동·여성 안전</option>
+
+                                            <option value="0030109">여성인력</option>
+
+                                            <option value="0030110">여성일자리</option>
+
+                                            <option value="0030111">일·가족양립</option>
+
+                                            <option value="0030112">일반사업</option>
+
+                                            <option value="0030113">일반연구사업</option>
+
+                                            <option value="0030114">평등문화</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-auto">
+                                        <select name="s" id="lbl0" class="custom-select custom-select-lg w-auto">
+                                            <option value="searchAll" selected="">제목+내용</option>
+                                            <option value="searchTitle">제목</option>
+                                            <option value="searchContent">내용</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-100 d-lg-none my-1"></div>
+                                    <div class="col">
+                                        <input type="text" class="form-control form-control-lg" placeholder="KEYWORDS">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-lg btn-gray">SEARCH</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="count">
+                        <span>Total</span>
+                        <i>8</i>
+                        <span>Page</span>
+                        <i>2</i>
+                    </div>
+                    <table class="table table-hover">
+                        <colgroup>
+                            <col width="80">
+                            <col width="100">
+                            <col width="130">
+                            <col>
+                            <col width="140">
+                            <col width="110">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="text-center">번호</th>
+                                <th class="text-center">출간년도</th>
+                                <th class="text-center">연구사업</th>
+                                <th class="text-center">제목/주관부처·관계부처</th>
+                                <th class="text-center">등록일</th>
+                                <th class="text-center">첨부파일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="번호" class="text-center">389</td>
+                                <td data-label="출간년도" class="text-center">2021</td>
+                                <td data-label="연구사업" class="text-center">
+                                    기본연구사업
+                                </td>
+                                <td data-label="제목 /주관부처·관계부처" class="text-left tit"><a href="issuePaperDetail.html">성희롱·성폭력 범죄에 대한 근절대책과 향후 개선과제</a>
+                                    <p class="text-gray mt-md-2">여성가족부,고용노동부, 법무부/공공부문 직장 내 성희롱·성폭력신고센터, 고용노동부 익명신고센터, 여성긴급전화 1366 (성폭력상담소 등 연계), 교육부 교육분야 온라인 신고센터, 한국예술인복지재단 성폭력 피해 신고센터, 문화체육관광부 스포츠비리신고센터, 콘텐츠
+                                        성평등센터, 한국영화성평등센터</p>
+                                </td>
+                                <td data-label="등록일" class="text-center">2021-11-20</td>
+                                <td data-label="첨부파일" class="text-center"><a href="" aria-label="Download"><i class="icon-download"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <%- include('../layout/_pagination.ejs')%>
+                </div>
+
+            </main>
+        </div>
+
+        <%- include('../layout/_footer.ejs')%>
+
+    </div>
+
+
+    <script>
+    </script>
+
+</body>
+
+</html>

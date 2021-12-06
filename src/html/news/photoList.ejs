@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <%- include('../layout/_head.ejs')%>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <%- include('../layout/_header.ejs')%>
+
+        <div id="container-block">
+            <main id="content" role="main" data-dep1="news" data-dep2="photos" data-dep3="">
+
+                <div class="sub-visual">
+                    <div class="container">
+                        <h2 class="page-title">Photos</h2>
+                    </div>
+                </div>
+                <%- include('../layout/_location.ejs')%>
+                <div class="container">
+                    <form action="">
+                        <fieldset>
+                            <legend>SEARCH</legend>
+                            <div class="board-search">
+                                <div class="row row-10">
+                                    <div class="col-auto">
+                                        <select name="s" id="lbl2" class="custom-select custom-select-lg">
+                                            <option value="searchAll" selected="">제목+내용</option>
+                                            <option value="searchTitle">제목</option>
+                                            <option value="searchContent">내용</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control form-control-lg" placeholder="KEYWORDS">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-lg btn-gray">SEARCH</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="count">
+                        <span>Total</span>
+                        <i>8</i>
+                        <span>Page</span>
+                        <i>2</i>
+                    </div>
+                    <div class="card-news photos">
+                        <div class="row">
+                            <% for(var i = 0; i < 5; i++){ %>
+                            <div class="col-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <a href="photoDetail.html" class="img">
+                                        <img src="https://www.kwdi.re.kr/upload/CM019/CM01920211130160413DCUZN.jpg" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="" class="card-title">제13차 개발과 젠더에 관한 아태개발협력포럼: ICT와 여성의 권한강화 개최</a>
+                                        <p class="card-text"><span class="text-muted">2021-09-17</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <% } %>
+                        </div>
+                    </div>
+                    <%- include('../layout/_pagination.ejs')%>
+                </div>
+
+            </main>
+        </div>
+
+        <%- include('../layout/_footer.ejs')%>
+
+    </div>
+
+
+    <script>
+    </script>
+
+</body>
+
+</html>

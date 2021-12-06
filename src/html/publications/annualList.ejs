@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <%- include('../layout/_head.ejs')%>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <%- include('../layout/_header.ejs')%>
+
+        <div id="container-block">
+            <main id="content" role="main" data-dep1="publications" data-dep2="annual" data-dep3="">
+
+                <div class="sub-visual">
+                    <div class="container">
+                        <h2 class="page-title">Annual Report</h2>
+                    </div>
+                </div>
+                <%- include('../layout/_location.ejs')%>
+                <div class="container">
+                    <form action="">
+                        <fieldset>
+                            <legend>SEARCH</legend>
+                            <div class="board-search">
+                                <div class="row row-10">
+                                    <div class="col">
+                                        <input type="text" class="form-control form-control-lg" placeholder="KEYWORDS">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-lg btn-gray">SEARCH</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="count">
+                        <span>Total</span>
+                        <i>8</i>
+                        <span>Page</span>
+                        <i>2</i>
+                    </div>
+                    <div class="gallery-list">
+                        <ul class="row row-60">
+                            <% for(var i = 0; i < 4; i++){ %>
+                            <li class="col-12 col-lg-4 col-xl-3">
+                                <div class="item">
+                                    <a href="">
+                                        <div class="img">
+                                            <img src="https://eng.kwdi.re.kr/upload/ECM014/ECM01420210615135328WOATJ.jpg" alt="">
+                                            <div class="layer">
+                                                <div class="tit">Annual Report <br>(2020~2021)</div>
+                                                <dl class="info">
+                                                   <dt>Author</dt> <dd>KWDI</dd>
+                                                   <dt>Publisher</dt> <dd>KWDI</dd>
+                                                   <dt>Year</dt> <dd>2021</dd>
+                                                   <dt>Date</dt> <dd>2021-06-15</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="download">
+                                        <a href="">Download File <i class="icon-download ml-2"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-lg-4 col-xl-3">
+                                <div class="item">
+                                    <a href="">
+                                        <div class="img">
+                                            <img src="https://eng.kwdi.re.kr/upload/ECM014/ECM01420200311141946SETYM.jpg" alt="">
+                                            <div class="layer">
+                                                <div class="tit">Annual Report <br>(2020~2021)</div>
+                                                <dl class="info">
+                                                   <dt>Author</dt> <dd>KWDI</dd>
+                                                   <dt>Publisher</dt> <dd>KWDI</dd>
+                                                   <dt>Year</dt> <dd>2021</dd>
+                                                   <dt>Date</dt> <dd>2021-06-15</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="download">
+                                        <a href="">Download File <i class="icon-download ml-2"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <% } %>
+                        </ul>
+                    </div>
+                    <%- include('../layout/_pagination.ejs')%>
+                </div>
+
+            </main>
+        </div>
+
+        <%- include('../layout/_footer.ejs')%>
+
+    </div>
+
+
+    <script>
+    </script>
+
+</body>
+
+</html>

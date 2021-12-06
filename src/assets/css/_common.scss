@@ -18,6 +18,7 @@
 .icon-search{background-image: url('../images/icon-search.svg');width: 30px;height: 30px;}
 .icon-search-white{background-image: url('../images/icon-search-white.svg');width: 28px;height: 28px;}
 .icon-home{background-image: url('../images/icon-home.svg');width: 22px;height: 22px;}
+.icon-download{background-image: url('../images/icon-download.svg');width: 21px;height: 18px;}
 
 .icon-arrow-left{display: inline-block;width: 12px;height: 12px;border-top: 2px solid #000;border-right: 2px solid #000;transform: rotate(-135deg);border-radius: px;vertical-align: middle;}
 .icon-arrow-right{display: inline-block;width: 12px;height: 12px;border-top: 2px solid #000;border-right: 2px solid #000;transform: rotate(45deg);border-radius: 1px;vertical-align: middle;}
@@ -46,6 +47,12 @@ textarea{
 .custom-select-light{
     color: #fff;
     background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3e%3cpath fill='%23fff' d='M4,5L0,0h8L4,5z'/%3e%3c/svg%3e") right 0.75rem center/8px 10px no-repeat;
+}
+.custom-select-lg{
+    padding-right: 2.5rem;
+    @include media-breakpoint-down(md) {
+        padding-right: 1.75rem;
+    }
 }
 
 .custom-checkbox.without-label{
@@ -219,6 +226,10 @@ textarea.form-control{resize: none;}
             .btn-pause{display: block;}
         }
     }
+    @include media-breakpoint-down(md) {
+        .btn-play,
+        .btn-pause{background-size: 50px auto;}
+    }
 }
 
 @include media-breakpoint-down(md) {
@@ -245,7 +256,7 @@ textarea.form-control{resize: none;}
     > ol{
         display: table;width: 100%;border-collapse: collapse;
         > li{
-            display: table-cell;border: 1px solid #e6e6e6;position: relative;
+            display: table-cell;border: 1px solid $border-color;position: relative;
             > a{
                 min-width: 74px;height: 74px;padding: 0 30px;display: flex;align-items: center;position: relative;text-decoration: none;
                 &::after{content: '';width: 11px;height: 11px;border-top: 2px solid #222;border-right: 2px solid #222;transform: rotate(135deg);vertical-align: top;position: absolute;right: 30px;top: 50%;margin-top: -8px;}
@@ -289,10 +300,10 @@ textarea.form-control{resize: none;}
     .location{
         margin-top: 0;margin-bottom: 30px;
         > ol{
-            display: flex !important;border-bottom: 1px solid #e6e6e6;
+            display: flex !important;border-bottom: 1px solid $border-color;
             > li{
                 border: 0;flex-basis: 0;flex-grow: 1;max-width: 100%;min-width: 0;
-                & + li{border-left: 1px solid #e6e6e6;}
+                & + li{border-left: 1px solid $border-color;}
                 > a{
                     padding: 0 30px 0 15px;font-size: 13px;height: 50px;min-width: 50px;
                     &::after{width: 7px;height: 7px;margin-top: -6px;right: 15px;border-top: 1px solid #222;border-right: 1px solid #222;}
@@ -321,7 +332,7 @@ textarea.form-control{resize: none;}
 .count{
     display: flex;align-items: center; margin-bottom: 20px;
     span{}
-    i{font-weight: 700;margin-left: 4px;}
+    i{font-weight: 700;margin-left: 4px;font-style: normal;}
     i + span{
         &::before{content: '';width: 1px;height: 16px;background: #e6e6e6;display: inline-block;vertical-align: middle;margin: 0 10px;transform: translateY(-1px);}
     }
@@ -335,14 +346,16 @@ textarea.form-control{resize: none;}
     @include media-breakpoint-up(lg) {
         .btn{min-width: 240px;}
         .custom-select{min-width: 220px;}
+        .custom-select.w-auto{min-width: 0;}
     }
     @include media-breakpoint-down(md) {
         margin-bottom: 45px;
+        .col .custom-select.w-auto{width: 100% !important;}
     }
 }
 
 .more{
-    display: inline-block;width: 30px;height: 30px;border: 1px solid #e6e6e6;position: relative;
+    display: inline-block;width: 30px;height: 30px;border: 1px solid $border-color;position: relative;
     &::after{content: '';display: block;width: 10px;height: 10px;background: url('../images/icon-plus-red.svg') 50% 50% no-repeat;transition:transform 0.7s ease;position: absolute;left:50%;top:50%;margin: -5px 0 0 -5px;}
     &:hover::after{-webkit-transform: rotate(180deg);transform: rotate(180deg);}
 }
@@ -358,15 +371,21 @@ textarea.form-control{resize: none;}
             td{display: block;}
         }
         colgroup{display: none;}
-        tr{display: block;width: 100%;border-bottom: 1px solid #e6e6e6;padding: 15px 0;}
+        tr{display: block;width: 100%;border-bottom: 1px solid $border-color;padding: 15px 0;}
         th{display: block;}
         thead{display: none;}
+        tbody th,
         tbody td{display: inline-block;border-bottom: 0;padding: 0;font-size: 13px;margin-right: 20px;}
         tbody td:before{content: attr(data-label);color: #797979;margin-right: 10px;}
+        .tit{
+            display: block;margin-top: 6px;margin-bottom: 5px;
+            &::before{display: none;}
+        }
         [data-label=Title]{
             display: block;
             &::before{display: none;}
         }
+        a .icon-download{vertical-align: middle;}
     }
 }
 
@@ -374,6 +393,10 @@ textarea.form-control{resize: none;}
     position: relative;padding-left: 40px;line-height: 24px;margin-bottom: 40px;margin-top: 60px;
     &::before{content: '';background: url('../images/title-point.svg') no-repeat 0 0;background-size: contain;width: 24px;height: 24px;position: absolute;left: 0;top: 0;}
     font-size: 22px;font-weight: 700;
+    @include media-breakpoint-down(md) {
+        font-size: 17px;padding-left: 30px;margin-bottom: 30px;line-height: 18px;
+        &::before{background-size: 18px 18px;width: 18px;height: 18px;}
+    }
 }
 
 
@@ -381,5 +404,30 @@ textarea.form-control{resize: none;}
 @include media-breakpoint-down(md) {
     .mobile-scroll-x{
         overflow-y: hidden;
+    }
+}
+
+.table-view{
+    border-top: 1px solid #000;
+    tbody{
+        th{background: none;font-weight: 700;}
+        th.tit{font-size: 22px;padding-top: 1.5rem;padding-bottom: 1.5rem;height: auto;}
+    }
+    .viewwrap{line-height: 1.8;
+        p{margin: 1em 0;}
+    }
+    @include media-breakpoint-down(md) {
+        tbody{
+            tr{display: flex;align-items: center;}
+            th,
+            td{border: 0;padding: 0 1rem;margin: 0;display: inline-block;vertical-align: middle;
+                &::before{display: none;}
+            }
+            th{white-space: nowrap;}
+            th.tit{border-bottom: 0;padding-top: 0;padding-bottom: 0;font-size: 16px;white-space: normal;}
+        }
+        .viewwrap{
+            img{max-width: 100% !important;height: !important;}
+        }
     }
 }

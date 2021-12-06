@@ -23,7 +23,7 @@ aside{
     }
     .lang{
         a{color: #fff;font-size: 14px;font-weight: 700;vertical-align: top;}
-        i{margin-right: 5px;}
+        i{margin-right: 5px;font-style: normal;}
     }
 }
 @include media-breakpoint-down(md) {
@@ -35,7 +35,10 @@ aside{
     }
 }
 
-header{transition: .35s ease-out;}
+header{transition: .35s ease-out;background: #fff;}
+html.gnb-hover{
+    header{background: rgba(255,255,255,.9) !important}
+}
 @include media-breakpoint-down(md) {
     header{height: 60px;
         .row{height: 100%;}
@@ -43,11 +46,11 @@ header{transition: .35s ease-out;}
 }
 
 h1.logo{
-    line-height: 1;vertical-align: top;font-size: 0;
+    line-height: 1;vertical-align: top;font-size: 0;margin-top: 28px;
     a{color: #fff;text-decoration: none;line-height: 1;display: inline-block;vertical-align: top;}
     strong{font-size: 30px;font-weight: 700;}
-    span{font-size: 16px;margin-left: 3px;font-weight: 700;}
-    i{color: #3168b9;}
+    span{font-size: 16px;margin-left: 6px;font-weight: 700;}
+    i{color: #3168b9;font-style: normal;}
     @include media-breakpoint-down(md) {
         strong{font-size: 24px;}
         span,
@@ -71,11 +74,24 @@ h1.logo{
             &.active{
                 > a span::before{width: 100%;}
             }
-            & + li{margin-left: 56px;}
+            &.hover{
+                .dep2{opacity: 1;visibility: visible;}
+            }
+            & + li{margin-left: 65px;}
         }
     }
     .dep2{
-        position: absolute;left: 0;top: 90px;
+        position: absolute;left: 0;top: 90px;opacity: 0;visibility: hidden;transition: opacity .2s;white-space: nowrap;padding-top: 20px;
+        > li{
+            + li{margin-top: 6px;}
+            > a{font-weight: 500;font-size: 15px;}
+        }
+    }
+    .dep3{
+        > li{
+            &::before{content: '-';margin-right: 8px;}
+            > a{font-weight: 500;font-size: 14px;}
+        }
     }
 }
 @include media-breakpoint-down(xl) {
@@ -119,14 +135,15 @@ h1.logo{
     }
 }
 
-.btn-hamburger{color: #fff;line-height: 1;
+.btn-hamburger{
+    color: #fff;line-height: 1;margin-top: 28px;
     svg{vertical-align: middle;}
 }
 
 
 body:not(.body-main){
     aside{
-        background: #fafafa;border-bottom: 1px solid #e6e6e6;
+        background: #fafafa;border-bottom: 1px solid $border-color;
         .social a{color: #000;}
         .lang a{color: #000;}
     }
@@ -140,12 +157,22 @@ body:not(.body-main){
 }
 
 html.is-scrolled{
-    .header{background: #fff;}
+    h1.logo{margin-top: 21px;}
+    .btn-hamburger{margin-top: 21px;}
 }
 
+html.gnb-hover{
+    h1.logo{
+        strong,
+        span{color: #000;}
+    }
+    .gnb .dep1 > li > a{color: #000;}
+    .gnb .dep1 > li > a span::before{background: #000;}
+    .btn-hamburger .cls-1{stroke: #000;}
+}
 html.header-fixed{
     #header-block{
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.05);background: rgba(255,255,255,0.9);
         transform: translateY(-40px);
     }
     header{background: #fff;}
@@ -304,7 +331,8 @@ html.show-sitemap{
 }
 @include media-breakpoint-down(md) {
     #footer{
-        padding: 30px 0;
+        padding: 30px 0 calc(constant(safe-area-inset-bottom) + 30px);
+        padding: 30px 0 calc(env(safe-area-inset-bottom) + 30px);
         .footer-info{margin-right: 0;font-size: 12px;}
         .copyright{font-size: 12px;margin-top: 20px;}
         .familysite{

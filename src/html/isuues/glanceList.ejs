@@ -12,11 +12,11 @@
         <%- include('../layout/_header.ejs')%>
 
         <div id="container-block">
-            <main id="content" role="main" data-dep1="publications" data-dep2="seminars" data-dep3="">
+            <main id="content" role="main" data-dep1="issues" data-dep2="glance" data-dep3="">
 
                 <div class="sub-visual">
                     <div class="container">
-                        <h2 class="page-title">Abstract</h2>
+                        <h2 class="page-title">Gender Statistics at a Glance</h2>
                     </div>
                 </div>
                 <%- include('../layout/_location.ejs')%>
@@ -26,15 +26,6 @@
                             <legend>SEARCH</legend>
                             <div class="board-search">
                                 <div class="row row-10">
-                                    <div class="col-auto">
-                                        <select name="" id="" class="custom-select custom-select-lg">
-                                            <option value="">PERIOD</option>
-                                            <option value="">ALL</option>
-                                            <option value="">2021</option>
-                                            <option value="">2020</option>
-                                            <option value="">2017</option>
-                                        </select>
-                                    </div>
                                     <div class="col">
                                         <input type="text" class="form-control form-control-lg" placeholder="KEYWORDS">
                                     </div>
@@ -55,25 +46,21 @@
                         <colgroup>
                             <col>
                             <col style="width: 150px">
-                            <col style="width: 200px">
                         </colgroup>
                         <thead>
                             <tr>
                                 <th class="text-center">Title</th>
-                                <th class="text-center">Period</th>
                                 <th class="text-center">Date</th>
                             </tr>
                         </thead>
                         <tbody>
                             <% for(var i = 0; i < 5; i++){ %>
                             <tr>
-                                <td data-label="Title" class="text-left"><a href="researchView.do?p=1&amp;idx=102943">2020 KWDI Abstract Collection</a></td>
-                                <td data-label="Period" class="text-center">2020</td>
+                                <td data-label="Title" class="text-left"><a href="researchView.do?p=1&amp;idx=102943">The Difference in Employment Rate between Married Female and Married Male is 27.5%p</a></td>
                                 <td data-label="Date" class="text-center">2021-05-04</td>
                             </tr>
                             <tr>
-                                <td data-label="Title" class="text-left"><a href="researchAbstractDetail.html">Preparing Evaluation Standards for Non-consensual Sexual Acts - Research on Case Studies from Korea and Other Countries</a></td>
-                                <td data-label="Period" class="text-center">2020</td>
+                                <td data-label="Title" class="text-left"><a href="researchAbstractDetail.html">Number of Female Research Directors for National Research and Development Projects Remains One-fifth of Men</a></td>
                                 <td data-label="Date" class="text-center">2021-04-28</td>
                             </tr>
                             <% } %>

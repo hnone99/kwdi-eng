@@ -30,7 +30,7 @@
                                         <input type="text" class="form-control form-control-lg" placeholder="KEYWORDS">
                                     </div>
                                     <div class="col-auto">
-                                        <button type="submit" class="btn btn-lg btn-primary">SEARCH</button>
+                                        <button type="submit" class="btn btn-lg btn-gray">SEARCH</button>
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +43,36 @@
                         <i>2</i>
                     </div>
                     <div class="mou">
-
+                        <ul>
+                            <% for(var i = 0; i < 5; i++){ %>
+                            <li>
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <span>Institution</span>
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://www.unfpa.org/" target="_blank">United Nations Population Fund (UNFPA)</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <span>Date</span>
+                                    </div>
+                                    <div class="col">
+                                        2020.12.16
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <span>Details</span>
+                                    </div>
+                                    <div class="col">
+                                        The purpose of this agreement is to promote exchange of researchers and information, collaborative research, hosting of international conferences and seminars on the advancement of the sustainable development agenda, specifically focusing on promoting corporate social responsibility within maternal health, sexual and reproductive health and rights, gender and data between the United Nations Population Fund(UNFPA) in New York, the United States and the Korean Women’s Development Institute (KWDI) in Seoul, Korea.
+                                    </div>
+                                </div>
+                            </li>
+                            <% } %>
+                        </ul>
                     </div>
                 </div>
 

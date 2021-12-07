@@ -90,11 +90,13 @@
 //
 // Placed here since it has to come after the potential zebra striping
 
-.table-hover {
-  tbody tr {
-    @include hover() {
-      color: $table-hover-color;
-      background-color: $table-hover-bg;
+@include media-breakpoint-up(lg) {
+  .table-hover {
+    tbody tr {
+      @include hover() {
+        color: $table-hover-color;
+        background-color: $table-hover-bg;
+      }
     }
   }
 }

@@ -82,12 +82,14 @@ h1.logo{
         > li{
             + li{margin-top: 6px;}
             > a{font-weight: 500;font-size: 15px;color: #444;}
+            &.active > a{color: $blue;font-weight: 700;}
         }
     }
     .dep3{
         > li{
             &::before{content: '-';margin-right: 8px;}
             > a{font-weight: 500;font-size: 14px;color: #444;}
+            &.active > a{color: #000;font-weight: 700;text-decoration: underline;}
         }
     }
     @include media-breakpoint-down(xl) {
@@ -130,7 +132,7 @@ h1.logo{
 }
 
 .btn-hamburger{
-    color: #fff;line-height: 1;margin-top: 30px;
+    color: #fff;line-height: 1;margin-top: 29px;
     svg{vertical-align: middle;}
     @include media-breakpoint-down(md) {
         margin-top: 15px;
@@ -183,7 +185,8 @@ html.header-fixed{
 
 .sitemap-layer{
     background: #02132c;color: #fff;position: fixed;left: 0;top: 0;width: 100%;z-index: 999;padding-left: 30px;padding-right: 30px;display: none;
-    .btn-sitemap-close{position: absolute;right: 0;top: 60px;line-height: 1;
+    .btn-sitemap-close{
+        position: absolute;right: 5px;top: 60px;z-index: 2;line-height: 1;padding: 10px;
         i{vertical-align: top;}
     }
 }
@@ -231,13 +234,18 @@ html.show-sitemap{
 @include media-breakpoint-down(md) {
     .sitemap-layer{
         position: fixed;height: 100%;padding: 0 .75rem;
-        .btn-sitemap-close{top: 20px;right: 0;}
+        .btn-sitemap-close{top: 21px;right: 12.5px;padding: 0;
+            i{width: 18px;height: 18px;}
+        }
     }
     .sitemap{
         padding: 60px 0 0;
         .dep1{
-            display: block;padding-bottom: 30px;
+            display: block;
+            padding-bottom: calc(constant(safe-area-inset-bottom) + 30px);
+            padding-bottom: calc(env(safe-area-inset-bottom) + 30px);
             > li{
+                padding: 0 25px;
                 & + li{margin-top: 15px;}
                 > a{
                     display: block;position: relative;font-size: 28px;

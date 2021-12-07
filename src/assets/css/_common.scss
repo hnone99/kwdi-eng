@@ -420,14 +420,16 @@ textarea.form-control{resize: none;}
         tbody{
             tr{display: flex;align-items: center;}
             th,
-            td{border: 0;padding: 0 1rem;margin: 0;display: inline-block;vertical-align: middle;
+            td{border: 0;padding: 0;margin: 0;display: inline-block;vertical-align: middle;
                 &::before{display: none;}
             }
             th{white-space: nowrap;}
+            td + th{padding-left: 25px;}
+            th + td{padding-left: 20px;}
             th.tit{border-bottom: 0;padding-top: 0;padding-bottom: 0;font-size: 16px;white-space: normal;}
         }
         .viewwrap{
-            img{max-width: 100% !important;height: !important;}
+            img{max-width: 100% !important;height: 100% !important;}
         }
     }
 }

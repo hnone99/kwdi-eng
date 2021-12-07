@@ -77,18 +77,18 @@ var Common = {
 		var dep2 = $("main").attr("data-dep2");
 		var dep3 = $("main").attr("data-dep3");
 
-		$('.location .dep1 > a span').text($('.sitemap [data-dep1="'+ dep1 +'"]').text());
-		$('.location .dep2 > a span').text($('.sitemap [data-dep2="'+ dep2 +'"]').text());
+		$('.location .dep1 > a span').text($('.gnb [data-dep1="'+ dep1 +'"]').text());
+		$('.location .dep2 > a span').text($('.gnb [data-dep2="'+ dep2 +'"]').text());
 		if(dep3 !== ''){
-			$('.location .dep3 > a span').text($('.sitemap [data-dep3="'+ dep3 +'"]').text());
+			$('.location .dep3 > a span').text($('.gnb [data-dep3="'+ dep3 +'"]').text());
 		}else{
 			$('.location .dep3').empty();
 			$('.location .dep3').addClass('hide');
 		}
 
-		$('.sitemap [data-dep1="'+ dep1 +'"]').closest('li').siblings().clone().appendTo($('.location .dep1 > ul'))
-		$('.sitemap [data-dep2="'+ dep2 +'"]').closest('li').siblings().clone().appendTo($('.location .dep2 > ul'))
-		$('.sitemap [data-dep3="'+ dep3 +'"]').closest('li').siblings().clone().appendTo($('.location .dep3 > ul'));
+		$('.gnb [data-dep1="'+ dep1 +'"]').closest('li').siblings().clone().appendTo($('.location .dep1 > ul'))
+		$('.gnb [data-dep2="'+ dep2 +'"]').closest('li').siblings().clone().appendTo($('.location .dep2 > ul'))
+		$('.gnb [data-dep3="'+ dep3 +'"]').closest('li').siblings().clone().appendTo($('.location .dep3 > ul'));
 
 		$('.location > ol > li:not(.home) > a').on('click',function(e){
 			e.preventDefault();
@@ -176,6 +176,10 @@ var Header = {
 		var dep3 = $("main").attr("data-dep3");
 
 		$('.gnb [data-dep1="'+ dep1 +'"]').parent().addClass('active');
+		$('.gnb [data-dep2="'+ dep2 +'"]').parent().addClass('active');
+		if(dep3 !== ''){
+			$('.gnb [data-dep3="'+ dep3 +'"]').parent().addClass('active');
+		}
 
 		$('.gnb .dep2').each(function(i, el){
 			dep2Height[i] = parseInt($(this).height());
@@ -225,15 +229,7 @@ var Header = {
 		});
 	},
 	sitemap: function(){
-		var dep1 = $("main").attr("data-dep1");
-		var dep2 = $("main").attr("data-dep2");
-		var dep3 = $("main").attr("data-dep3");
-
-		$('.sitemap [data-dep1="'+ dep1 +'"]').parent().addClass('active');
-		$('.sitemap [data-dep2="'+ dep2 +'"]').parent().addClass('active');
-		if(dep3 !== ''){
-			$('.sitemap [data-dep3="'+ dep3 +'"]').parent().addClass('active');
-		}
+		$('.gnb .dep1').clone().appendTo($('.sitemap'));
 
 		$('.btn-hamburger').on('click',function(e){
 			e.preventDefault();

@@ -6,6 +6,13 @@ body.body-main{
     .header-search{display: none;}
     header{background: transparent;}
     .gnb .dep2{padding-top: 0;}
+
+    html.gnb-hover:not(.is-scrolled) &{
+        header{background: rgba(33, 125, 190, .9) !important}
+        .gnb .dep2 > li > a,
+        .gnb .dep3 > li > a,
+        .gnb .dep3 > li::before{color: #fff;}
+    }
 }
 
 .main{

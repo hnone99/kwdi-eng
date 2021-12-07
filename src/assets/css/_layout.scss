@@ -25,9 +25,7 @@ aside{
         a{color: #fff;font-size: 14px;font-weight: 700;vertical-align: top;}
         i{margin-right: 5px;font-style: normal;}
     }
-}
-@include media-breakpoint-down(md) {
-    aside{
+    @include media-breakpoint-down(md) {
         .social,
         .lang{
             a{font-size: 12px;}
@@ -35,23 +33,22 @@ aside{
     }
 }
 
-header{transition: .35s ease-out;background: #fff;}
-html.gnb-hover{
-    header{background: rgba(255,255,255,.9) !important}
-}
-@include media-breakpoint-down(md) {
-    header{height: 60px;
+header{
+    transition: .35s ease-out;
+    @include media-breakpoint-down(md) {
+        height: 60px;
         .row{height: 100%;}
     }
 }
 
 h1.logo{
-    line-height: 1;vertical-align: top;font-size: 0;margin-top: 28px;
+    line-height: 1;vertical-align: top;font-size: 0;margin-top: 29px;
     a{color: #fff;text-decoration: none;line-height: 1;display: inline-block;vertical-align: top;}
     strong{font-size: 30px;font-weight: 700;}
     span{font-size: 16px;margin-left: 6px;font-weight: 700;}
     i{color: #3168b9;font-style: normal;}
     @include media-breakpoint-down(md) {
+        margin-top: 20px;
         strong{font-size: 24px;}
         span,
         i{display: none;}
@@ -84,25 +81,26 @@ h1.logo{
         position: absolute;left: 0;top: 90px;opacity: 0;visibility: hidden;transition: opacity .2s;white-space: nowrap;padding-top: 20px;
         > li{
             + li{margin-top: 6px;}
-            > a{font-weight: 500;font-size: 15px;}
+            > a{font-weight: 500;font-size: 15px;color: #444;}
         }
     }
     .dep3{
         > li{
             &::before{content: '-';margin-right: 8px;}
-            > a{font-weight: 500;font-size: 14px;}
+            > a{font-weight: 500;font-size: 14px;color: #444;}
         }
     }
-}
-@include media-breakpoint-down(xl) {
-    .gnb{margin-right: 2rem;}
-    .gnb .dep1 > li > a{font-size: 16px;}
-    .gnb .dep1 > li + li{margin-left: 30px;}
+    @include media-breakpoint-down(xl) {
+        margin-right: 2rem;
+        .dep1 > li > a{font-size: 16px;}
+        .dep1 > li + li{margin-left: 30px;}
 
+    }
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
 }
-@include media-breakpoint-down(md) {
-    .gnb{display: none;}
-}
+
 
 .header-search{
     position: relative;display: inline-block;vertical-align: middle;margin-right: 30px;margin-left: 30px;line-height: 1;
@@ -115,16 +113,12 @@ h1.logo{
         .form-control{width: 220px;padding-left: 1rem;padding-right: 3rem;display: block;}
         .icon-search{width: 24px;height: 24px;}
     }
-}
-@include media-breakpoint-down(xl) {
-    .header-search{
+    @include media-breakpoint-down(xl) {
         &.active{
             .form-control{width: 180px;}
         }
     }
-}
-@include media-breakpoint-down(md) {
-    .header-search{
+    @include media-breakpoint-down(md) {
         margin-right: 5px;margin-left: 0;
         .form-control{height: 36px;}
         .icon-search{width: 24px;height: 24px;}
@@ -136,8 +130,11 @@ h1.logo{
 }
 
 .btn-hamburger{
-    color: #fff;line-height: 1;margin-top: 28px;
+    color: #fff;line-height: 1;margin-top: 30px;
     svg{vertical-align: middle;}
+    @include media-breakpoint-down(md) {
+        margin-top: 15px;
+    }
 }
 
 
@@ -159,29 +156,27 @@ body:not(.body-main){
 html.is-scrolled{
     h1.logo{margin-top: 21px;}
     .btn-hamburger{margin-top: 21px;}
+    @include media-breakpoint-down(md) {
+        h1.logo{margin-top: 18px;}
+        .btn-hamburger{margin-top: 17px;}
+    }
 }
 
 html.gnb-hover{
-    h1.logo{
-        strong,
-        span{color: #000;}
-    }
-    .gnb .dep1 > li > a{color: #000;}
-    .gnb .dep1 > li > a span::before{background: #000;}
-    .btn-hamburger .cls-1{stroke: #000;}
+    header{box-shadow: 5px 5px 10px rgba(0,0,0,0.03);background: rgba(255,255,255,.9);}
 }
 html.header-fixed{
     #header-block{
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.05);background: rgba(255,255,255,0.9);
         transform: translateY(-40px);
     }
-    header{background: #fff;}
+    header{box-shadow: 5px 5px 10px rgba(0,0,0,0.03);background: rgba(255,255,255,0.9) !important;}
     h1.logo{
         strong,
         span{color: #000;}
     }
     .gnb .dep1 > li > a{color: #000;height: 70px;font-size: 18px;}
     .gnb .dep1 > li > a span::before{background: #000;}
+    .gnb .dep2{padding-top: 0;}
     .btn-hamburger .cls-1{stroke: #000;}
 }
 
@@ -328,9 +323,7 @@ html.show-sitemap{
             }
         }
     }
-}
-@include media-breakpoint-down(md) {
-    #footer{
+    @include media-breakpoint-down(md) {
         padding: 30px 0 calc(constant(safe-area-inset-bottom) + 30px);
         padding: 30px 0 calc(env(safe-area-inset-bottom) + 30px);
         .footer-info{margin-right: 0;font-size: 12px;}
@@ -352,9 +345,7 @@ html.show-sitemap{
     html.is-scrolled &{
         bottom: 260px;
     }
-}
-@include media-breakpoint-down(md) {
-    .btn-top{
+    @include media-breakpoint-down(md) {
         right: 15px;bottom: 15px !important;
         > a {width: 40px;height: 40px;}
         .icon-top{width: 18px;height: 20px;}

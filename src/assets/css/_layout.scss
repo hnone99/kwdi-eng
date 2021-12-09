@@ -16,18 +16,23 @@ body{overflow-x: hidden;width: 100%;padding-top: 129px;}
 
 aside{
     border-bottom: 1px solid rgba(255,255,255,.4);height: 39px;line-height: 1;
-    .social{
+    .center{
         display: flex;
-        li{margin-right: 26px;}
-        a{color: #fff;font-size: 14px;font-weight: 700;vertical-align: top;}
+        li{margin-right: 25px;}
+        a{color: #fff;font-size: 13px;font-weight: 700;vertical-align: top;}
     }
-    .lang{
-        a{color: #fff;font-size: 14px;font-weight: 700;vertical-align: top;}
-        i{margin-right: 5px;font-style: normal;}
+    .util{
+        display: flex;
+        li{margin-left: 25px;}
+        a{font-size: 13px;color: #fff;}
+        .lang{
+            a{color: #fff;font-weight: 700;display: inline-flex;align-items: center;}
+            i{margin-right: 5px;font-style: normal;}
+        }
     }
     @include media-breakpoint-down(md) {
-        .social,
-        .lang{
+        .util{
+            li{margin-left: 20px;}
             a{font-size: 12px;}
         }
     }
@@ -43,15 +48,22 @@ header{
 
 h1.logo{
     line-height: 1;vertical-align: top;font-size: 0;margin-top: 29px;
-    a{color: #fff;text-decoration: none;line-height: 1;display: inline-block;vertical-align: top;}
+    a{color: #fff;text-decoration: none;line-height: 1;display: inline-flex;align-items: flex-end;vertical-align: top;}
     strong{font-size: 30px;font-weight: 700;}
-    span{font-size: 16px;margin-left: 6px;font-weight: 700;}
+    span{font-size: 14px;margin-left: 8px;font-weight: 700;color: #a6a6a6;line-height: 1.15;}
     i{color: #3168b9;font-style: normal;}
+    body.body-cidc &{
+        a{align-items: center;}
+        span{display: block !important;}
+    }
     @include media-breakpoint-down(md) {
         margin-top: 20px;
         strong{font-size: 24px;}
         span,
         i{display: none;}
+        body.body-cidc &{
+            span{font-size: 11px;}
+        }
     }
 }
 
@@ -62,7 +74,7 @@ h1.logo{
         > li{
             position: relative;
             > a{
-                font-size: 20px;font-weight: 700;padding: 0;text-decoration: none;display: flex;height: 90px;align-items: center;transition: height .35s .1s ease-in-out;color: #fff;
+                font-size: 20px;font-weight: 700;padding: 0;text-decoration: none;display: flex;height: 90px;align-items: center;transition: .35s .1s ease-in-out;color: #fff;
                 span{position: relative;display: flex;height: 100%;align-items: center;justify-content: center;}
                 span::before{content: '';display: inline-block;width: 0;height: 2px;background: #fff;position: absolute;left: 0;bottom: 0;z-index: 1;transition: all .2s;}
                 &.hover span::before{width: 100%;}
@@ -92,10 +104,15 @@ h1.logo{
             &.active > a{color: #000;font-weight: 700;text-decoration: underline;}
         }
     }
+    @include media-breakpoint-up(xxl) {
+        body.body-cidc &{
+        .dep1 > li + li{margin-left: 50px;}
+        }
+    }
     @include media-breakpoint-down(xl) {
         margin-right: 2rem;
         .dep1 > li > a{font-size: 16px;}
-        .dep1 > li + li{margin-left: 30px;}
+        .dep1 > li + li{margin-left: 28px;}
 
     }
     @include media-breakpoint-down(md) {
@@ -132,7 +149,7 @@ h1.logo{
 }
 
 .btn-hamburger{
-    color: #fff;line-height: 1;margin-top: 29px;
+    color: #fff;line-height: 1;margin-top: 29px;transition: .2s .1s ease-in-out;
     svg{vertical-align: middle;}
     @include media-breakpoint-down(md) {
         margin-top: 15px;
@@ -143,12 +160,11 @@ h1.logo{
 body:not(.body-main){
     aside{
         background: #fafafa;border-bottom: 1px solid $border-color;
-        .social a{color: #000;}
-        .lang a{color: #000;}
+        .center a{color: #000;}
+        .util a{color: #000;}
     }
     h1.logo{
-        strong,
-        span{color: #000;}
+        strong{color: #000;}
     }
     .gnb .dep1 > li > a{color: #000;}
     .gnb .dep1 > li > a span::before{background: #000;}
@@ -180,25 +196,29 @@ html.header-fixed{
     .gnb .dep1 > li > a span::before{background: #000;}
     .gnb .dep2{padding-top: 0;}
     .btn-hamburger .cls-1{stroke: #000;}
+    @include media-breakpoint-down(xl) {
+        .gnb .dep1 > li > a{font-size: 15px;}
+    }
 }
 
 
 .sitemap-layer{
     background: #02132c;color: #fff;position: fixed;left: 0;top: 0;width: 100%;z-index: 999;padding-left: 30px;padding-right: 30px;display: none;
+    > .container{position: relative;}
     .btn-sitemap-close{
         position: absolute;right: 5px;top: 60px;z-index: 2;line-height: 1;padding: 10px;
         i{vertical-align: top;}
     }
 }
 .sitemap{
-    position: relative;padding: 150px 0;
+    position: relative;padding: 100px 0 120px;
     a{color: #fff;}
     .dep1{
-        display: flex;justify-content: space-between;flex-wrap: wrap;margin: 0 -30px;
+        display: flex;flex-wrap: wrap;margin: 0 -30px;
         > li{
-            padding: 0 30px;
+            padding: 0 40px;margin-top: 30px;
             > a{
-                font-size: 34px;font-weight: 700;
+                font-size: 30px;font-weight: 700;
                 @include media-breakpoint-up(lg) {
                     pointer-events: none;
                 }
@@ -210,8 +230,8 @@ html.header-fixed{
     }
     .dep2{
         > li{
-            margin: 20px 0;
-            > a{font-size: 18px;font-weight: 500;
+            margin: 10px 0;
+            > a{font-size: 16px;font-weight: 500;
                 @include media-breakpoint-down(xl) {
                     font-size: 16px;
                 }
@@ -222,7 +242,7 @@ html.header-fixed{
         > li{
             margin: 8px 0;
             &::before{content: '-';margin-right: 8px;}
-            > a{font-size: 18px;}
+            > a{font-size: 16px;}
         }
     }
 }

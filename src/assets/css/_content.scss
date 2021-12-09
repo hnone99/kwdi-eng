@@ -403,7 +403,7 @@
             .layer{opacity: 1;}
         }
         .img{
-            width: 100%;height: 0;padding-bottom: 136.8%;position: relative;
+            width: 100%;height: 0;padding-bottom: 136.8%;position: relative;box-shadow: 0 3px 15px rgba(0,0,0,0.08);
             img{width: 100%;height: 100%;object-fit: cover;position: absolute;left: 0;top: 0;}
         }
         .layer{
@@ -431,8 +431,8 @@
         .item{
             > a{display: block;position: relative;padding-left: 130px;}
             .img{
-                padding-bottom: 0;position: static;height: 100%;
-                img{width: 115px;height: auto;position: absolute;left: 0;top: 0;}
+                padding-bottom: 0;position: static;height: 100%;box-shadow: none;
+                img{width: 115px;height: auto;position: absolute;left: 0;top: 0;box-shadow: 0 3px 10px rgba(0,0,0,0.1);}
             }
             .layer{
                 opacity: 1 !important;padding: 0;background: none;color: #000;position: static;width: 100%;min-height: 157px;
@@ -461,13 +461,14 @@
     .card{
         border-radius: 0;height: 100%;
         box-shadow: 0 3px 15px 0 rgba(0,0,0,0.08);transition: .15s;
-        &:hover{box-shadow: 0 3px 15px 0 rgba(0,0,0,0.15);}
+        &:hover{box-shadow: 0 3px 15px 4px rgba(0,0,0,0.15);}
     }
-    .card-body{border-radius: 0;}
-    .card-text{font-size: 15px;text-decoration: none;}
+    .card-body{border-radius: 0;position: relative;}
+    .card-text{font-size: 15px;text-decoration: none;margin-top: 1.875rem;}
     .card-title{
-        font-size: 20px;font-weight: 600;line-height: 1.4;max-height: 4.2em; overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;
+        font-size: 20px;font-weight: 600;line-height: 1.4;max-height: 4.2em; overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;margin-bottom: 0;
     }
+    .icon-youtube{position: absolute;right: 30px;bottom: 30px;}
     &.photos{
         .img{padding-bottom: 67.76%;
             img{object-position: center;}
@@ -477,8 +478,9 @@
         > .row{margin: -10px -10px;
             > [class^=col]{padding: 10px 10px;}
         }
-        .card-title{font-size: 15px;margin-bottom: .5rem;}
-        .card-text{font-size: 13px;}
+        .card-title{font-size: 15px;letter-spacing: -0.03em;}
+        .card-text{font-size: 13px;margin-top: .5rem;}
+        .icon-youtube{right: 15px;bottom: 15px;}
     }
 }
 
@@ -604,5 +606,14 @@
             a{font-size: 15px;}
             span{width: 52px;}
         }
+    }
+}
+
+.cidc-overview{
+    .text{color: #797979;font-size: 18px;line-height: 1.67;
+        strong{color: #0c408d;}
+    }
+    @include media-breakpoint-down(md) {
+        .text{font-size: 14px;}
     }
 }

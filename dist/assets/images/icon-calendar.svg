@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-2{fill:#515151}
+        </style>
+    </defs>
+    <g id="icon_calendar" transform="translate(-684 -844)">
+        <g id="그룹_2769" data-name="그룹 2769" transform="translate(-1516.222 132.294)">
+            <g id="그룹_2768" data-name="그룹 2768" transform="translate(2207.222 727.595)">
+                <path id="패스_1283" data-name="패스 1283" d="M2233.339 741.44H2208.1a.881.881 0 0 1 0-1.761h25.237a.881.881 0 1 1 0 1.761z" transform="translate(-2207.222 -739.679)" style="fill:#e04c4b"/>
+            </g>
+            <rect id="사각형_1926" data-name="사각형 1926" class="cls-2" width="2.98" height="2.98" rx="1.49" transform="translate(2212.033 731.25)"/>
+            <rect id="사각형_1927" data-name="사각형 1927" class="cls-2" width="2.98" height="2.98" rx="1.49" transform="translate(2219.231 731.25)"/>
+            <rect id="사각형_1928" data-name="사각형 1928" class="cls-2" width="2.98" height="2.98" rx="1.49" transform="translate(2226.428 731.25)"/>
+            <rect id="사각형_1929" data-name="사각형 1929" class="cls-2" width="2.98" height="2.98" rx="1.49" transform="translate(2212.033 735.943)"/>
+            <rect id="사각형_1930" data-name="사각형 1930" class="cls-2" width="2.98" height="2.98" rx="1.49" transform="translate(2219.231 735.943)"/>
+            <rect id="사각형_1931" data-name="사각형 1931" class="cls-2" width="2.98" height="2.98" rx="1.49" transform="translate(2226.428 735.943)"/>
+            <path id="패스_1284" data-name="패스 1284" class="cls-2" d="M2231.81 722.731h-2.533v-2.145a.881.881 0 0 0-1.761 0v2.145h-13.591v-2.145a.88.88 0 1 0-1.761 0v2.145h-2.533a2.412 2.412 0 0 0-2.409 2.409v15.944a2.412 2.412 0 0 0 2.409 2.409h22.179a2.412 2.412 0 0 0 2.409-2.409V725.14a2.412 2.412 0 0 0-2.409-2.409zm.648 18.353a.649.649 0 0 1-.648.649h-22.179a.649.649 0 0 1-.648-.649V725.14a.649.649 0 0 1 .648-.648h2.533v1.486a.88.88 0 1 0 1.761 0v-1.486h13.591v1.486a.881.881 0 0 0 1.761 0v-1.486h2.533a.649.649 0 0 1 .648.648z"/>
+        </g>
+        <path id="사각형_1932" data-name="사각형 1932" transform="translate(684 844)" style="fill:none" d="M0 0h40v40H0z"/>
+    </g>
+</svg>

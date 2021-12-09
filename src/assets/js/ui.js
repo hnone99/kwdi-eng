@@ -78,7 +78,12 @@ var Common = {
 		var dep3 = $("main").attr("data-dep3");
 
 		$('.location .dep1 > a span').text($('.gnb [data-dep1="'+ dep1 +'"]').text());
-		$('.location .dep2 > a span').text($('.gnb [data-dep2="'+ dep2 +'"]').text());
+		if(dep2 !== ''){
+			$('.location .dep2 > a span').text($('.gnb [data-dep2="'+ dep2 +'"]').text());
+		}else{
+			$('.location .dep2').empty();
+			$('.location .dep2').addClass('hide');
+		}
 		if(dep3 !== ''){
 			$('.location .dep3 > a span').text($('.gnb [data-dep3="'+ dep3 +'"]').text());
 		}else{
@@ -174,6 +179,10 @@ var Header = {
 		var dep1 = $("main").attr("data-dep1");
 		var dep2 = $("main").attr("data-dep2");
 		var dep3 = $("main").attr("data-dep3");
+
+		if(dep1 == 'aboutCIDC' || dep1 == 'forum' || dep1 == 'workshop' || dep1 == 'publicationsCIDC' || dep1 == 'contact'){
+			$('body').addClass('body-cidc');
+		}
 
 		$('.gnb [data-dep1="'+ dep1 +'"]').parent().addClass('active');
 		$('.gnb [data-dep2="'+ dep2 +'"]').parent().addClass('active');

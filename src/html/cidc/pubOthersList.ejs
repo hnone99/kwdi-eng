@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <%- include('../layout/_head.ejs')%>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <%- include('../layout/_header_cidc.ejs')%>
+
+        <div id="container-block">
+            <main id="content" role="main" data-dep1="publicationsCIDC" data-dep2="others" data-dep3="">
+
+                <div class="sub-visual">
+                    <div class="container">
+                        <h2 class="page-title">Others</h2>
+                    </div>
+                </div>
+                <%- include('../layout/_location.ejs')%>
+                <div class="container">
+                    <div class="card-news">
+                        <div class="row">
+                            <% for(var i = 0; i < 5; i++){ %>
+                            <div class="col-6 col-lg-4 col-xl-3">
+                                <div class="card">
+                                    <a href="pubOthersDetail.html" class="img">
+                                        <img src="http://cidc.kwdi.re.kr/upload/board/20180202155450_7566.jpg" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="" class="card-title">The 9th Asia-Pacific Forum on Development and Gender</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <% } %>
+                        </div>
+                    </div>
+                    <%- include('../layout/_pagination.ejs')%>
+                </div>
+
+            </main>
+        </div>
+
+        <%- include('../layout/_footer.ejs')%>
+
+    </div>
+
+
+    <script>
+    </script>
+
+</body>
+
+</html>

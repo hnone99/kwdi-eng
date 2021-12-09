@@ -379,3 +379,15 @@ html.show-sitemap{
         .icon-top{width: 18px;height: 20px;}
     }
 }
+
+
+.charge{
+    position: relative;margin-bottom: 30px;
+    &.hide{display:none !important;}
+    dl{line-height:15px;border:4px solid $border-color;padding:25px 0;}
+    dl dt{display:inline;padding-left:17px;margin-left:15px;;color: #222;}
+    dl dt:before{content: '·'}
+    dl dd{display:inline;color: #797979;}
+    strong{position: absolute;right:20px;top:50%;margin-top: -13.5px;height: 27px;text-align: right;}
+    strong img{height: 32px;}
+}

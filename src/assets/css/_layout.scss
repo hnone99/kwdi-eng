@@ -9,7 +9,7 @@ body{overflow-x: hidden;width: 100%;padding-top: 129px;}
 #wrap{min-height: 100%;display: flex;flex-direction: column;overflow: hidden;}
 
 #header-block{
-    position: fixed;left: 0;top: 0;z-index: 10;width: 100%;transition: .35s ease-out;
+    position: fixed;left: 0;top: 0;z-index: 10;width: 100%;transition: .2s ease-out;
     &::after{content: '';display: block;width: 100%;height: 1px;/* background: $border-color; */position: absolute;bottom: 0;left: 0;}
     .container{height: 100%;position: relative;}
 }
@@ -39,7 +39,7 @@ aside{
 }
 
 header{
-    transition: .35s ease-out;
+    transition: .2s ease-out;
     @include media-breakpoint-down(md) {
         height: 60px;
         .row{height: 100%;}
@@ -74,7 +74,7 @@ h1.logo{
         > li{
             position: relative;
             > a{
-                font-size: 20px;font-weight: 700;padding: 0;text-decoration: none;display: flex;height: 90px;align-items: center;transition: .35s .1s ease-in-out;color: #fff;
+                font-size: 20px;font-weight: 700;padding: 0;text-decoration: none;display: flex;height: 90px;align-items: center;transition: .15s;color: #fff;
                 span{position: relative;display: flex;height: 100%;align-items: center;justify-content: center;}
                 span::before{content: '';display: inline-block;width: 0;height: 2px;background: #fff;position: absolute;left: 0;bottom: 0;z-index: 1;transition: all .2s;}
                 &.hover span::before{width: 100%;}
@@ -190,7 +190,7 @@ html.header-fixed{
     header{box-shadow: 5px 5px 10px rgba(0,0,0,0.03);background: rgba(255,255,255,0.9) !important;}
     h1.logo{
         strong,
-        span{color: #000;}
+        span{color: #000 !important;}
     }
     .gnb .dep1 > li > a{color: #000;height: 70px;font-size: 18px;}
     .gnb .dep1 > li > a span::before{background: #000;}
@@ -214,9 +214,9 @@ html.header-fixed{
     position: relative;padding: 100px 0 120px;
     a{color: #fff;}
     .dep1{
-        display: flex;flex-wrap: wrap;margin: 0 -30px;
+        display: flex;flex-wrap: wrap;justify-content: center;
         > li{
-            padding: 0 40px;margin-top: 30px;
+            padding: 0 80px;margin-top: 30px;
             > a{
                 font-size: 30px;font-weight: 700;
                 @include media-breakpoint-up(lg) {

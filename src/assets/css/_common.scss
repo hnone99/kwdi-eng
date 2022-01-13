@@ -274,10 +274,10 @@ textarea.form-control{resize: none;}
                 }
                 .icon-home{vertical-align: top;}
             }
-            &.dep1{width: 245px;
+            &.dep1{width: 280px;
                 .dep2{display: none;}
             }
-            &.dep2{width: 31%;
+            &.dep2{width: 34%;
                 .dep3{display: none;}
             }
             &.active{
@@ -394,6 +394,8 @@ textarea.form-control{resize: none;}
         a .icon-download{vertical-align: middle;}
     }
 }
+
+.sub-title{font-size: 46px;font-weight: 700;margin-bottom:3rem;}
 
 .sub-title-point{
     position: relative;padding-left: 40px;line-height: 24px;margin-bottom: 40px;margin-top: 60px;

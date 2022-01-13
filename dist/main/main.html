@@ -15,10 +15,6 @@
     <link rel="stylesheet" href="../assets/lib/swiper/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../assets/lib/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="../assets/lib/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
-    <!-- sidebar css  -->
-    <link rel="stylesheet" href="https://shop.montbell.co.kr/thema/default/widget/basic-sidebar/widget.css?ver=180820">
-
-    <link rel="stylesheet" href="https://shop.montbell.co.kr/skin/member/basic/style.css?ver=180820">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -117,7 +113,7 @@
                                                 <li><a href="../news/pressList.html" data-dep2="press">Press Release</a></li>
                                                 <li><a href="../news/newsletterList.html" data-dep2="newsletter">News Letter</a></li>
                                                 <li><a href="../news/eventList.html" data-dep2="events">Events</a></li>
-                                                <li><a href="../news/videoList.html" data-dep2="photos">Video's</a></li>
+                                                <li><a href="../news/videoList.html" data-dep2="videos">Videos</a></li>
                                                 <li><a href="../news/photoList.html" data-dep2="photos">Photos</a></li>
                                             </ul>
                                         </li>
@@ -560,20 +556,12 @@
                     </section>
                     <section class="section-statistics">
                         <div class="container">
-                            <h2 class="title">Statistics</h2>
+                            <h2 class="title">Gender Statistics at a Glance</h2>
                             <ul class="pie_chart_box">
-
-
-
-
-
-
-
-
                                 <li>
                                     <a href="javascript:;" class="pie_chart" onclick="moveStat('36', '2003102', '2003000');">
                                         <p class="pie_year">2021</p>
-                                        <p class="pie_title">정규직 근로자 중 여성비율</p>
+                                        <p class="pie_title">Percentage of elected female lawmakers</p>
                                         <div class="graph_div graph_01"><canvas width="140" height="140"></canvas><strong>38.4<i>%</i></strong></div>
                                     </a>
                                 </li>
@@ -582,7 +570,7 @@
                                 <li>
                                     <a href="javascript:;" class="pie_chart" onclick="moveStat('33', '2003102', '2003000');">
                                         <p class="pie_year">2020</p>
-                                        <p class="pie_title">여성 경제활동참가율 </p>
+                                        <p class="pie_title">Proportion of females among university faculty members</p>
                                         <div class="graph_div graph_02"><canvas width="140" height="140"></canvas><strong>52.8<i>%</i></strong></div>
                                     </a>
                                 </li>
@@ -591,7 +579,7 @@
                                 <li>
                                     <a href="javascript:;" class="pie_chart" onclick="moveStat('25', '2003102', '2003000');">
                                         <p class="pie_year">2018</p>
-                                        <p class="pie_title">지역구 국회의원 여성비율</p>
+                                        <p class="pie_title">Share of men among workers on child care leave</p>
                                         <div class="graph_div graph_03"><canvas width="140" height="140"></canvas><strong>10.3<i>%</i></strong></div>
                                     </a>
                                 </li>
@@ -600,143 +588,757 @@
                                 <li>
                                     <a href="javascript:;" class="pie_chart" onclick="moveStat('23', '2003102', '2003000');">
                                         <p class="pie_year">2020</p>
-                                        <p class="pie_title">대학교 교원 여성비율</p>
+                                        <p class="pie_title">Share of career interrupted women among marred women aged 15 to 54</p>
                                         <div class="graph_div graph_04"><canvas width="140" height="140"></canvas><strong>27.0<i>%</i></strong></div>
                                     </a>
                                 </li>
-
-
-
-                                <!--
-                            <li>
-                                <a href="javascript:;" class="pie_chart">
-                                    <p class="pie_year">2019</p>
-                                    <p class="pie_title">여성 경제활동 참가율</p>
-                                    <div class="graph_div graph_01"><strong></strong></div>
-                                </a>
-                            </li> -->
-
-
                             </ul>
-                            <div class="row row-80">
-                                <div class="col-12 col-lg-4">
-                                    <div class="text">
-                                        <strong>Gender Statistics at a Glance</strong>
-                                        <p>For the realization of a gender-equal society in all the world Facilitate the connection of activists and proceed with the activity.</p>
-                                        <em>Visiting Gender <br>Equality Support Organization</em>
-                                        <a href="" class="btn btn-round btn-outline-primary btn-lg">VIEW</a>
-                                    </div>
+                            <ul class="index_box">
+                                <li class="index_01">
+                                    <a href="javascript:;" id="gdi1Btn" data-param="GDI1">
+                                        <p class="index_title"><span class="index_t_year">KGEI</span> Korean Gender Equality Index</p>
+
+                                        <div class="num_vertical_slide slick-initialized slick-slider slick-vertical">
+                                            <div class="slick-list draggable" style="height: 40px;">
+                                                <div class="slick-track" style="opacity: 1; height: 520px; transform: translate3d(0px, -200px, 0px); transition: transform 300ms ease 0s;">
+                                                    <div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">2019</p><span class="score">73.9</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">2014</p><span class="score">69.6</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">2015</p><span class="score">70.5</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">2016</p><span class="score">71.4</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="3" aria-hidden="true">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">2017</p><span class="score">72.2</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-current slick-active" data-slick-index="4" aria-hidden="false" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">2018</p><span class="score">73.1</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">2019</p><span class="score">73.9</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">2014</p><span class="score">69.6</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">2015</p><span class="score">70.5</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">2016</p><span class="score">71.4</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">2017</p><span class="score">72.2</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">2018</p><span class="score">73.1</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">2019</p><span class="score">73.9</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </li>
+                                <li class="index_02">
+                                    <a href="javascript:;" id="gdi2Btn" data-param="GDI2">
+
+                                        <p class="index_title">
+                                            <span class="index_t_year">RGEI 2018</span>Regional Gender Equality Index
+                                        </p>
+
+                                        <div class="num_vertical_slide slick-initialized slick-slider slick-vertical">
+                                            <div class="slick-list draggable" style="height: 42px;">
+                                                <div class="slick-track" style="opacity: 1; height: 1386px; transform: translate3d(0px, -294px, 0px); transition: transform 300ms ease 0s;">
+                                                    <div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Jeju-do</p>
+                                                                <span class="score">
+                                                                    High
+
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Gyeonggi-do</p>
+                                                                <span class="score">
+
+                                                                    Upper-middle
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Seoul</p>
+                                                                <span class="score">
+
+                                                                    Upper-middle
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Busan</p>
+                                                                <span class="score">
+                                                                    High
+
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Daegu</p>
+                                                                <span class="score">
+                                                                    High
+
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">lncheon</p>
+                                                                <span class="score">
+
+
+
+                                                                    Lower-middle
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 171px;">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Gwangju</p>
+                                                                <span class="score">
+
+
+
+                                                                    Lower-middle
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-current slick-active" data-slick-index="6" aria-hidden="false" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Daejeon</p>
+                                                                <span class="score">
+                                                                    High
+
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="7" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Ulsan</p>
+                                                                <span class="score">
+
+                                                                    Upper-middle
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="8" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Gangwon-do</p>
+                                                                <span class="score">
+
+
+
+                                                                    Lower-middle
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="9" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Chungcheongbuk-do</p>
+                                                                <span class="score">
+
+                                                                    Upper-middle
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="10" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Chungcheongnam-do</p>
+                                                                <span class="score">
+
+
+
+
+                                                                    Low
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="11" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Jeollabuk-do</p>
+                                                                <span class="score">
+
+
+
+                                                                    Lower-middle
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="12" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Jeollanam-do</p>
+                                                                <span class="score">
+
+
+
+
+                                                                    Low
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="13" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Gyeongsangbuk-do</p>
+                                                                <span class="score">
+
+
+
+
+                                                                    Low
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="14" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Gyeongsangnam-do</p>
+                                                                <span class="score">
+
+
+
+
+                                                                    Low
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="15" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Jeju-do</p>
+                                                                <span class="score">
+                                                                    High
+
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="16" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Gyeonggi-do</p>
+                                                                <span class="score">
+
+                                                                    Upper-middle
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="17" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Seoul</p>
+                                                                <span class="score">
+
+                                                                    Upper-middle
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="18" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Busan</p>
+                                                                <span class="score">
+                                                                    High
+
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="19" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Daegu</p>
+                                                                <span class="score">
+                                                                    High
+
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="20" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">lncheon</p>
+                                                                <span class="score">
+
+
+
+                                                                    Lower-middle
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="21" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Gwangju</p>
+                                                                <span class="score">
+
+
+
+                                                                    Lower-middle
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="22" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Daejeon</p>
+                                                                <span class="score">
+                                                                    High
+
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="23" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Ulsan</p>
+                                                                <span class="score">
+
+                                                                    Upper-middle
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="24" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Gangwon-do</p>
+                                                                <span class="score">
+
+
+
+                                                                    Lower-middle
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="25" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Chungcheongbuk-do</p>
+                                                                <span class="score">
+
+                                                                    Upper-middle
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="26" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Chungcheongnam-do</p>
+                                                                <span class="score">
+
+
+
+
+                                                                    Low
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="27" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Jeollabuk-do</p>
+                                                                <span class="score">
+
+
+
+                                                                    Lower-middle
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="28" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Jeollanam-do</p>
+                                                                <span class="score">
+
+
+
+
+                                                                    Low
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="29" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Gyeongsangbuk-do</p>
+                                                                <span class="score">
+
+
+
+
+                                                                    Low
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="30" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Gyeongsangnam-do</p>
+                                                                <span class="score">
+
+
+
+
+                                                                    Low
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="31" id="" aria-hidden="true" style="width: 171px;" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_year">Jeju-do</p>
+                                                                <span class="score">
+                                                                    High
+
+
+
+
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </a>
+                                </li>
+                                <li class="index_03">
+                                    <a href="javascript:;" id="gdi3Btn" data-param="GDI3">
+                                        <div class="num_vertical_slide slick-initialized slick-slider slick-vertical">
+                                            <div class="slick-list draggable" style="height: 40px;">
+                                                <div class="slick-track" style="opacity: 1; height: 280px; transform: translate3d(0px, -80px, 0px); transition: transform 300ms ease 0s;">
+                                                    <div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_title">
+                                                                    <span class="index_t_year">GII 2020</span>
+
+                                                                    Gender Inequality Index
+
+                                                                </p>
+                                                                <span class="score">0.064</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="0" aria-hidden="true">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_title">
+                                                                    <span class="index_t_year">GDI 2020</span>
+
+
+                                                                    Gender-related Development Index
+                                                                </p>
+                                                                <span class="score">0.936</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_title">
+                                                                    <span class="index_t_year">GGI 2021</span>
+                                                                    Gender Gap Index
+
+
+                                                                </p>
+                                                                <span class="score">0.687</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_title">
+                                                                    <span class="index_t_year">GII 2020</span>
+
+                                                                    Gender Inequality Index
+
+                                                                </p>
+                                                                <span class="score">0.064</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_title">
+                                                                    <span class="index_t_year">GDI 2020</span>
+
+
+                                                                    Gender-related Development Index
+                                                                </p>
+                                                                <span class="score">0.936</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_title">
+                                                                    <span class="index_t_year">GGI 2021</span>
+                                                                    Gender Gap Index
+
+
+                                                                </p>
+                                                                <span class="score">0.687</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" tabindex="-1">
+                                                        <div>
+                                                            <div style="width: 100%; display: inline-block;">
+                                                                <p class="index_title">
+                                                                    <span class="index_t_year">GII 2020</span>
+
+                                                                    Gender Inequality Index
+
+                                                                </p>
+                                                                <span class="score">0.064</span>pt
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="section-youtube">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-lg">
+                                    <h2 class="title">KWDI Youtube</h2>
+                                    <p class="desc">For the realization of a gender-equal society in all the world <br>Facilitate the connection of activists and proceed with the activity.</p>
                                 </div>
-                                <div class="col-12 col-lg-8">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="donut"><img src="../assets/images/main-donut-1.svg" alt=""></div>
-                                            <div class="info">
-                                                <strong>80</strong><i>%</i>
-                                                <p>Rate of female <br>social activity</p>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="donut"><img src="../assets/images/main-donut-2.svg" alt=""></div>
-                                            <div class="info">
-                                                <strong>75</strong><i>%</i>
-                                                <p>intention to marry <br>single</p>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="donut"><img src="../assets/images/main-donut-3.svg" alt=""></div>
-                                            <div class="info">
-                                                <strong>75</strong><i>%</i>
-                                                <p>Marriage <br>Satisfaction</p>
-                                            </div>
+                                <div class="col-12 col-lg-auto">
+                                    <div class="btns">
+                                        <a href="" class="btn btn-dark btn-lg btn-round">MORE +</a>
+                                        <div class="btn-swiper-pager">
+                                            <button type="button" class="btn btn-outline-dark btn-lg btn-round swiper-button-prev-youtube" aria-label="이전"><i class="icon-arrow-left"></i></button>
+                                            <button type="button" class="btn btn-outline-dark btn-lg btn-round swiper-button-next-youtube" aria-label="다음"><i class="icon-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="section-board">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-lg-4">
-                                    <h2 class="title">News</h2>
-                                    <p class="desc">We bring you the news of the Korea Women’s Development Institute.</p>
+                            <div class="main-youtube-list">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
 
-                                    <div class="btns">
-                                        <a href="" class="btn btn-dark btn-lg btn-round">MORE +</a>
-                                        <div class="btn-swiper-pager">
-                                            <button type="button" class="btn btn-outline-dark btn-lg btn-round swiper-button-prev-news" aria-label="이전"><i class="icon-arrow-left"></i></button>
-                                            <button type="button" class="btn btn-outline-dark btn-lg btn-round swiper-button-next-news" aria-label="다음"><i class="icon-arrow-right"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-8">
-                                    <div class="main-board-list">
-                                        <div class="swiper-container">
-                                            <div class="swiper-wrapper">
-
-                                                <div class="swiper-slide">
-                                                    <!-- 이벤트 -->
-                                                    <a href="#none" class="item" data-type="event">
-                                                        <div class="img">
-                                                            <img src="https://eng.kwdi.re.kr/upload/ECM032/ECM03220210929111921RLBIV.jpg" alt="">
-                                                        </div>
-                                                        <div class="tit">
-                                                            Building Back Better and Women's Political Empowerment in Asia(Ⅰ)
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <!-- 공지사항 -->
-                                                    <a href="#none" class="item" data-type="notice">
-                                                        <div class="tit">
-                                                            [KWDI Brief 60] Changes in Families due to the Covid-19 Pandemic and Policy Recommendations
-                                                        </div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="swiper-slide">
-                                                    <!-- 이벤트 -->
-                                                    <a href="#none" class="item" data-type="event">
-                                                        <div class="img">
-                                                            <img src="https://eng.kwdi.re.kr/upload/ECM032/ECM03220210929111921RLBIV.jpg" alt="">
-                                                        </div>
-                                                        <div class="tit">
-                                                            Building Back Better and Women's Political Empowerment in Asia(Ⅰ)
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <!-- 공지사항 -->
-                                                    <a href="#none" class="item" data-type="notice">
-                                                        <div class="tit">
-                                                            [KWDI Brief 60] Changes in Families due to the Covid-19 Pandemic and Policy Recommendations
-                                                        </div>
-                                                    </a>
-                                                </div>
-
-                                                <div class="swiper-slide">
-                                                    <!-- 이벤트 -->
-                                                    <a href="#none" class="item" data-type="event">
-                                                        <div class="img">
-                                                            <img src="https://eng.kwdi.re.kr/upload/ECM032/ECM03220210929111921RLBIV.jpg" alt="">
-                                                        </div>
-                                                        <div class="tit">
-                                                            Building Back Better and Women's Political Empowerment in Asia(Ⅰ)
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <!-- 공지사항 -->
-                                                    <a href="#none" class="item" data-type="notice">
-                                                        <div class="tit">
-                                                            [KWDI Brief 60] Changes in Families due to the Covid-19 Pandemic and Policy Recommendations
-                                                        </div>
-                                                    </a>
-                                                </div>
-
+                                        <div class="swiper-slide">
+                                            <div class="video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IrxuJZROU_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                             </div>
                                         </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IrxuJZROU_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IrxuJZROU_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IrxuJZROU_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IrxuJZROU_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="video">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IrxuJZROU_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -867,24 +1469,20 @@
             }
         });
 
-        var newsSwiper = new Swiper('.main-board-list .swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 40,
+        var newsSwiper = new Swiper('.main-youtube-list .swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 60,
+            freeMode: true,
             observer: true,
             observeParents: true,
             observeSlideChildren: true,
             navigation: {
-                nextEl: '.swiper-button-next-news',
-                prevEl: '.swiper-button-prev-news',
+                nextEl: '.swiper-button-next-youtube',
+                prevEl: '.swiper-button-prev-youtube',
             },
             breakpoints: {
-                1200: {
-                    slidesPerView: 2,
-                },
                 992: {
-                    slidesPerView: 'auto',
                     spaceBetween: 20,
-                    freeMode: true,
                 }
             }
         });

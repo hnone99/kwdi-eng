@@ -265,10 +265,10 @@ html.show-sitemap{
             padding-bottom: calc(constant(safe-area-inset-bottom) + 30px);
             padding-bottom: calc(env(safe-area-inset-bottom) + 30px);
             > li{
-                padding: 0 25px;
+                padding: 0 5px;
                 & + li{margin-top: 15px;}
                 > a{
-                    display: block;position: relative;font-size: 28px;
+                    display: block;position: relative;font-size: 26px;letter-spacing: -0.03em;
                     &::before{content: '';display: inline-block;width: 12px;height: 12px;border-top: 2px solid #fff;border-right: 2px solid #fff;transform: rotate(135deg);vertical-align: middle;position: absolute;right: 5px;top: 50%;margin-top: -7px;}
                 }
                 &.active{

@@ -214,9 +214,15 @@ html.header-fixed{
     position: relative;padding: 100px 0 120px;
     a{color: #fff;}
     .dep1{
-        display: flex;flex-wrap: wrap;justify-content: center;
+        display: flex;flex-wrap: wrap;justify-content: center;margin-left: -25px;margin-right: -25px;
         > li{
-            padding: 0 80px;margin-top: 30px;
+            padding: 0 60px;margin-top: 30px;
+            @include media-breakpoint-down(xl) {
+                padding: 0 45px;
+            }
+            @include media-breakpoint-down(lg) {
+                padding: 0 25px;
+            }
             > a{
                 font-size: 30px;font-weight: 700;
                 @include media-breakpoint-up(lg) {

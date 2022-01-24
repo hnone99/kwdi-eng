@@ -64,8 +64,14 @@
                     <section class="section-quick">
                         <div class="container">
                             <div class="card-wrap row m-b-30">
-                                <div class="col-6 col-xl-3">
+                                <div class="col-6 col-lg-4 col-xl-3">
                                     <div class="card">
+                                        <div class="card-header">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="tit">Report</div>
+                                                <div class="more-view"><span>MORE <i>VIEW</i></span></div>
+                                            </div>
+                                        </div>
                                         <a href="" class="card-body">
                                             <div class="img">
                                                 <img src="https://eng.kwdi.re.kr/upload/ECM014/ECM01420210615135328WOATJ.jpg" alt="">
@@ -74,13 +80,17 @@
                                                     <div class="date">2021-09-09</div>
                                                 </div>
                                             </div>
-                                            <div class="tit">Report</div>
-                                            <div class="more-view"><span>MORE VIEW</span></div>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-6 col-xl-3">
+                                <div class="col-6 col-lg-4 col-xl-3">
                                     <div class="card">
+                                        <div class="card-header">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="tit">Issue Paper</div>
+                                                <div class="more-view"><span>MORE <i>VIEW</i></span></div>
+                                            </div>
+                                        </div>
                                         <a href="" class="card-body">
                                             <div class="img">
                                                 <img src="https://eng.kwdi.re.kr/upload/ECM014/ECM01420210615135328WOATJ.jpg" alt="">
@@ -89,21 +99,23 @@
                                                     <div class="date">2021-09-09</div>
                                                 </div>
                                             </div>
-                                            <div class="tit">Issue Paper</div>
-                                            <div class="more-view"><span>MORE VIEW</span></div>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-6 col-xl-3 m-t-10 mt-xl-0">
+                                <div class="col-12 col-lg-4 col-xl-3 m-t-10 mt-lg-0">
                                     <div class="card">
+                                        <div class="card-header">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="tit">Card News</div>
+                                                <div class="more-view"><span>MORE <i>VIEW</i></span></div>
+                                            </div>
+                                        </div>
                                         <a href="" class="card-body">
-                                            <div class="img"><img src="https://www.kwdi.re.kr/upload/editor/CM030/CM03020211005075244WAJEL.jpg" alt=""></div>
-                                            <div class="tit">Card News</div>
-                                            <div class="more-view"><span>MORE VIEW</span></div>
+                                            <div class="img cardnews"><img src="https://www.kwdi.re.kr/upload/editor/CM030/CM03020211005075244WAJEL.jpg" alt=""></div>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-6 col-xl-3 m-t-10 mt-xl-0">
+                                <div class="col-12 col-xl-3 m-t-10 mt-lg-3">
                                     <div class="column-group">
                                         <div class="row flex-column">
                                             <div class="col">
@@ -205,10 +217,10 @@
                     <section class="section-publications">
                         <div class="container">
                             <div class="row justify-content-between">
-                                <div class="col-auto">
+                                <div class="col-12 col-lg">
                                     <h2 class="title">Publications</h2>
                                 </div>
-                                <div class="col-auto">
+                                <div class="col-12 col-lg-auto">
                                     <nav class="tab-custom">
                                         <ul class="nav nav-tabs" role="tablist">
                                             <li class="nav-item" role="presentation">
@@ -228,6 +240,12 @@
                                 <div class="tab-pane fade show active" id="t2-1" role="tabpanel">
                                     <div class="report-list">
                                         <div class="swiper-container">
+                                            <div class="btns">
+                                                <div class="btn-swiper-pager">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg btn-round swiper-button-prev-pub" aria-label="이전"><i class="icon-arrow-left"></i></button>
+                                                    <button type="button" class="btn btn-outline-dark btn-lg btn-round swiper-button-next-pub" aria-label="다음"><i class="icon-arrow-right"></i></button>
+                                                </div>
+                                            </div>
                                             <div class="swiper-wrapper">
                                                 <% for(var i = 0; i < 6; i++){ %>
                                                 <div class="swiper-slide">
@@ -279,13 +297,7 @@
                                 </div>
                                 <div class="col-12 col-lg">
                                     <div class="video">
-                                        <video width="100%">
-                                            <source src="../assets/images/2021_pr_video.mp4" type="video/mp4">
-                                        </video>
-                                        <div class="video-controller">
-                                            <button type="button" class="btn-play"><span class="sr-only">play</span></button>
-                                            <button type="button" class="btn-pause"><span class="sr-only">pause</span></button>
-                                        </div>
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5qhryOx9dF0?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -787,8 +799,8 @@
             observeParents: true,
             observeSlideChildren: true,
             navigation: {
-                nextEl: '.swiper-button-next-sites',
-                prevEl: '.swiper-button-prev-sites',
+                nextEl: '.swiper-button-next-pub',
+                prevEl: '.swiper-button-prev-pub',
             },
             breakpoints: {
                 992: {

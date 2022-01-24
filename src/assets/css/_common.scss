@@ -195,7 +195,7 @@ textarea.form-control{resize: none;}
 }
 @include media-breakpoint-down(md) {
     .tab-custom{
-        overflow-x: scroll;overflow-y: hidden;
+        overflow-x: auto;overflow-y: hidden;
         .nav-tabs{
             flex-wrap: nowrap;
             .nav-item + .nav-item{margin-left: 1.75rem;}
@@ -234,6 +234,7 @@ textarea.form-control{resize: none;}
 }
 
 @include media-breakpoint-down(md) {
+    .card-header{padding: 1rem;}
     .card-body{padding: 1rem;}
 }
 

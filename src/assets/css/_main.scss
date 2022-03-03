@@ -25,7 +25,7 @@ body.body-main{
     }
     @include media-breakpoint-down(md) {
         section{padding: 40px 0;}
-        .section-top{padding-top: 50px;min-height: 350px;}
+        .section-top{padding-top: 50px;min-height: 0;}
         .title{font-size: 24px;margin-bottom: 1rem;}
     }
 }
@@ -112,12 +112,17 @@ body.body-main{
 
 .main-banner{
     .item{
+        text-align: center;
         a{display: block;height: 100%;}
         img{max-height: 320px;}
     }
     .swiper-pagination{position: static;text-align: left;padding-left: 45px;margin-top: 10px;}
     .swiper-pagination-bullet{width: 12px;height: 12px;background: rgba(255,255,255,.3);opacity: 1;margin: 0 6px;}
     .swiper-pagination-bullet-active{background: #fff}
+    @include media-breakpoint-down(md) {
+        margin-top: 15px;
+        .item img{height: 200px;}
+    }
 }
 
 .section-quick{

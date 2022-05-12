@@ -146,11 +146,11 @@
         </div>
 
         <div id="container-block">
-            <main id="content" role="main" data-dep1="forum" data-dep2="asia" data-dep3="">
+            <main id="content" role="main" data-dep1="publicationsCIDC" data-dep2="others" data-dep3="">
 
                 <div class="sub-visual">
                     <div class="container">
-                        <h2 class="page-title">AP Forums</h2>
+                        <h2 class="page-title">Others</h2>
                     </div>
                 </div>
                 <nav class="location">
@@ -172,102 +172,122 @@
                         </li>
                     </ol>
                 </nav>
-                <div class="bg-animation">
-                    <div class="container">
-                        <span class="obj-2" data-0-start="top:0px;" data-0-end="top:-100px;"></span>
-                        <span class="obj-3" data-350-start="top:700px;left:45%;" data-0-end="left:35%;"></span>
-                    </div>
-                </div>
                 <div class="container">
                     <div class="ic-container">
-                        <strong class="h-text">Overview</strong>
-                        <div class="row row-60">
-                            <div class="col-12 col-lg">
-                                <p class="text">
-                                    Korean Women’s Development Institute (KWDI), a government research think-tank under the Prime Minister’s Office of South Korea, contributes to gender and development discourse by providing gender-sensitive perspectives in development and humanitarian assistance in the Asia Pacific region.
-                                </p>
-                                <p class="text m-t-40">
-                                    The Asia-Pacific Forum on Development and Gender (AP Forum hereafter) is an annual international conference hosted by KWDI with an objective of mainstreaming gender in development and humanitarian assistance. Working together with the donor government, bilateral/multilateral organizations, NGOs, and the academics, the AP Forum aspires to realize gender-sensitive development cooperation in a concerted and coherent way.
-                                </p>
-                            </div>
-                            <div class="col-12 col-lg mt-5 mt-lg-0">
-                                <img src="/assets/images/img-intro-01.png" alt="">
-                            </div>
+                        <form id="id_searchForm" name="searchForm" method="GET" action="pressList.do">
+                            <input type="hidden" id="id_s" name="s" value="searchAll" />
+                            <fieldset>
+                                <legend>SEARCH</legend>
+                                <div class="board-search">
+                                    <div class="row row-10">
+                                        <div class="col">
+                                            <input type="text" id="lbl3" name="w" value="${defaultVO.w }" class="form-control form-control-lg" placeholder="KEYWORDS">
+                                        </div>
+                                        <div class="col-auto">
+                                            <button type="submit" class="btn btn-lg btn-gray">SEARCH</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div class="count">
+                            <span>Total</span>
+                            <i>6</i>
+                            <span>Page</span>
+                            <i>1</i>
                         </div>
-                        <h3 class="sub-title-point none-ic">Past Themes Covered</h3>
                         <table class="table no-responsive">
+                            <colgroup>
+                                <col style="width: 9%">
+                                <col>
+                                <col style="width: 14%">
+                            </colgroup>
                             <thead>
                                 <tr>
-                                    <th style="width:10%;" class="text-center">No.</th>
-                                    <th style="width:20%;" class="text-center">Year</th>
-                                    <th style="width:70%;" class="text-center">Theme</th>
+                                    <th class="text-center">No</th>
+                                    <th class="text-center">Title</th>
+                                    <th class="text-center">Date</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="text-center text-color-down">1</td>
-                                    <td class="text-center text-color-down">2009</td>
-                                    <td class="text-left">The MDG 3: Gender Equality and Women's Empowerment.</td>
+                                    <td class="text-center text-color-down">
+                                        1
+                                    </td>
+                                    <td class="text-left">
+                                        <a href="">
+                                            Building Back Better and Women’s Political Empowerment in Asia(II): Women’s Political Representation and Reserved
+                                            Seats/Political Party Quotas in the Indo-Pacific Region
+                                        </a>
+                                    </td>
+                                    <td class="text-center text-color-down">
+                                        9 December 2021
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center text-color-down">2</td>
-                                    <td class="text-center text-color-down">2010</td>
-                                    <td class="text-left">Development and Gender: Good Practices, Sustainable Partnership, Effective Aid.</td>
+                                    <td class="text-center text-color-down">
+                                        2
+                                    </td>
+                                    <td class="text-left">
+                                        <a href="">
+                                            Online-debate on Online Gender-Based Violence
+                                        </a>
+                                    </td>
+                                    <td class="text-center text-color-down">
+                                        26 November 2021
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center text-color-down">3</td>
-                                    <td class="text-center text-color-down">2011</td>
-                                    <td class="text-left">Gender Mainstreaming in ODA: Experiences and Challenges of Norway and Korea.</td>
+                                    <td class="text-center text-color-down">
+                                        3
+                                    </td>
+                                    <td class="text-left">
+                                        <a href="">
+                                            Humanitarian Challenges and Gendered Impact: Vulnerabilities and Capabilities of Women and Children in DPRK
+                                        </a>
+                                    </td>
+                                    <td class="text-center text-color-down">
+                                        28 October 2021
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center text-color-down">4</td>
-                                    <td class="text-center text-color-down">2012</td>
-                                    <td class="text-left">KWDI’s Knowledge Sharing on Women’s Policy in the Asia-Pacific Region.</td>
+                                    <td class="text-center text-color-down">
+                                        4
+                                    </td>
+                                    <td class="text-left">
+                                        <a href="">
+                                            Building Back Better and Women’s Political Empowerment in Asia(I): Candidate Gender Quotas and Women’s Political Representation
+                                        </a>
+                                    </td>
+                                    <td class="text-center text-color-down">
+                                        30 September 2021
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center text-color-down">5</td>
-                                    <td class="text-center text-color-down">2013</td>
-                                    <td class="text-left">Towards Gender Equality in the Asia-Pacific Region: Current Efforts and Future Tasks.</td>
+                                    <td class="text-center text-color-down">
+                                        5
+                                    </td>
+                                    <td class="text-left">
+                                        <a href="">
+                                            Korea launch of the State of World Population Report 2021
+                                        </a>
+                                    </td>
+                                    <td class="text-center text-color-down">
+                                        28 October 2021
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center text-color-down">6</td>
-                                    <td class="text-center text-color-down">2014</td>
-                                    <td class="text-left">Achieving Gender Equality within Beijing+20 and Post- 2015 Framework: Opportunities and Challenges.</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center text-color-down">7</td>
-                                    <td class="text-center text-color-down">2015</td>
-                                    <td class="text-left">Gender In International Development Agenda: with a Special Focus on Beijing+20 and the SDG in China, Japan and Korea.</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center text-color-down">8</td>
-                                    <td class="text-center text-color-down">2016</td>
-                                    <td class="text-left">Better Life for Girls (BLG): Towards an Inclusive and Sustainable Future.</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center text-color-down">9</td>
-                                    <td class="text-center text-color-down">2017</td>
-                                    <td class="text-left">Gender and Sustainable Development Goals (SDGs): Regional Perspectives and National Implementation.</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center text-color-down">10</td>
-                                    <td class="text-center text-color-down">2018</td>
-                                    <td class="text-left">Incorporating Gender Perspectives into Development Cooperation in North Korea.</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center text-color-down">11</td>
-                                    <td class="text-center text-color-down">2019</td>
-                                    <td class="text-left">Gender Equality and Online Violence Against Women: Experiences from South Korea and Asia.</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center text-color-down">12</td>
-                                    <td class="text-center text-color-down">2020</td>
-                                    <td class="text-left">Gender and Development Cooperation in a Post-COVID 19 Era.</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center text-color-down">13</td>
-                                    <td class="text-center text-color-down">2021</td>
-                                    <td class="text-left">Shaping the Future, Unearthing the Potential : Empowering Women and Girls through ICTs.</td>
+                                    <td class="text-center text-color-down">
+                                        6
+                                    </td>
+                                    <td class="text-left">
+                                        <a href="">
+                                            Beijing and Beyond: Creating Gender Equal Future with the Next Generation
+                                        </a>
+                                    </td>
+                                    <td class="text-center text-color-down">
+                                        30 September 2021
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

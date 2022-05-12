@@ -709,3 +709,115 @@
         }
     }
 }
+
+.ic-container{
+    .table{
+        tr{ background: #fff; }
+        td{height:94px; }
+
+        &.border{
+            th{ border-right: 1px solid #e6e6e6;  padding: 30px 1rem;}
+            tr{
+                &.gray-bg{background-color: #fafafa;}
+            }
+            td{border-right: 1px solid #e6e6e6; padding: 30px 1rem;}
+
+        }
+    }
+    .text{
+        font-size: 18px;
+    }
+    .sub-title-point.none-ic{
+        padding-left:0; margin-top: 140px; margin-bottom: 20px; line-height:38px;
+    }
+    .sub-title-point.none-ic::before{
+        content:none;
+    }
+}
+
+.desc{
+    .dot-list{
+        padding-left: 40px;
+        li{
+            font-size:18px; line-height: 30px; color:#797979;
+        }
+    }
+}
+
+.workshop-txt{
+    position: relative; padding: 40px 184px 40px 290px; background-color: #f4f6f8; border-radius: 100px; margin-top: 70px;
+    .text{
+        line-height: 30px;
+    }
+}
+.workshop-txt__img{
+    position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+}
+.hidden-desktop{
+    display: none;
+}
+.hidden-mobile{
+    display: block;
+}
+
+.publication-box{
+    margin-top: 130px;
+    .h-text{
+        margin-bottom: 30px;
+    }
+    .text{
+        margin-bottom: 20px;
+    }
+    .sub-title-point{
+        margin-top: 70px;
+    }
+}
+.text-color-down{ color: #797979; }
+
+.text-color-navy{ color: #0c408d; font-weight: 600; }
+
+@media (max-width: 991.98px) {
+    .ic-container{
+        .text{
+            font-size: 14px;
+        }
+        .table{
+            td{
+                padding:1rem; height: auto;
+            }
+        }
+    }
+    .desc{
+        .dot-list{
+            padding-left: 30px;
+            li{
+                font-size:14px; line-height: 24px; 
+            }
+        }
+    }
+    .sub-title-point.none-ic {
+        margin-top: 54px; line-height: 25px;
+    }
+    .hidden-desktop{ display: block; }
+
+    .hidden-mobile{ display: none; }
+
+    .workshop-txt{
+        position: relative; padding: 30px;  background-color: #f4f6f8; border-radius: 40px; margin-top: 40px;
+        .text{
+            line-height: 25px; margin-top: 30px;
+        }
+    }
+    .workshop-txt__img{
+        position: static; left: inherit; top: inherit; transform: inherit; text-align: center;
+    }
+    .publication-box{
+        margin-top: 70px;
+        .h-text {
+            margin-bottom: 20px;
+        }
+        .sub-title-point {
+            margin-top: 40px;
+        }
+    }
+}   
